@@ -1,57 +1,80 @@
-# What is MyProduct?
+# 🤓 Getting started
 
-{% hint style="info" %}
-Giskard empowers AI teams to create **better AI models** by reducing risks of faulty models getting to production, saving time, and increasing trust within your organization and with your customers.\
+![](.gitbook/assets/Transparent.png)
+
+{% hint style="success" %}
+Giskard empowers AI teams to create **better AI models.**\
 \
-We are building the first **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
+We are building the first open source **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
 {% endhint %}
 
-## Getting Started
+### With Giskard, you
 
-**Got 2 minutes?** Check out a video overview of our product:
+* **Reduce risks**: Insuring yourself against business incidents caused by AI bugs
+* **Save time**: Investing in quality will save you time by reducing waste in AI pipelines
+* **Increase trust**: Aligning your tech and business stakeholders leads to better outcomes
+
+{% embed url="https://github.com/Giskard-AI/zeroth-project" %}
+Check out our GitHub!
+{% endembed %}
+
+## Want a quick demo?
+
+Check out a video overview of our product:
 
 {% embed url="https://www.youtube.com/watch?v=Eoc7PMpvw5k" %}
 
-### Guides: Jump right in
+## Installation
+
+![](.gitbook/assets/installation-gif.gif)
+
+Yes, that's all!
+
+## Example
+
+### 1. Upload a credit scoring model in Giskard
+
+![](.gitbook/assets/Upload.jpg)
+
+[See full notebook here](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=g-EksAIpGzEt)
+
+### 2. Give feedback on your credit scoring model
+
+
+
+### 3. Discuss and analyze feedback
+
+### 4. Turn feedback into tests
+
+
+
+
+
+
+
+
+
+
+
+## Guides: Jump right in
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/creating-your-first-project.md" %}
-[creating-your-first-project.md](guides/creating-your-first-project.md)
+{% content-ref url="guides/requirements.md" %}
+[requirements.md](guides/requirements.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/creating-your-first-task.md" %}
-[creating-your-first-task.md](guides/creating-your-first-task.md)
+{% content-ref url="guides/upload-your-model.md" %}
+[upload-your-model.md](guides/upload-your-model.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/advanced-permissions.md" %}
-[advanced-permissions.md](guides/advanced-permissions.md)
+{% content-ref url="guides/review-your-model.md" %}
+[review-your-model.md](guides/review-your-model.md)
 {% endcontent-ref %}
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
-
-### Fundamentals: Dive a little deeper
-
-Learn the fundamentals of MyProduct to get a deeper understanding of our main features:
-
-{% content-ref url="fundamentals/projects.md" %}
-[projects.md](fundamentals/projects.md)
+{% content-ref url="guides/create-tests-from-your-review.md" %}
+[create-tests-from-your-review.md](guides/create-tests-from-your-review.md)
 {% endcontent-ref %}
 
-{% content-ref url="fundamentals/members.md" %}
-[members.md](fundamentals/members.md)
-{% endcontent-ref %}
+## License
 
-{% content-ref url="fundamentals/task-lists.md" %}
-[task-lists.md](fundamentals/task-lists.md)
-{% endcontent-ref %}
-
-{% content-ref url="fundamentals/tasks.md" %}
-[tasks.md](fundamentals/tasks.md)
-{% endcontent-ref %}
-
-{% hint style="info" %}
-**Good to know:** Splitting your product into fundamental concepts, objects, or areas can be a great way to let readers deep dive into the concepts that matter most to them. Combine guides with this approach to 'fundamentals' and you're well on your way to great documentation!
-{% endhint %}
