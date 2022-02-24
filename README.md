@@ -36,9 +36,9 @@ Yes, that's all!
 
 ![](.gitbook/assets/Upload.png)
 
-[See full notebook here](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=g-EksAIpGzEt)
+[See full notebook](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=g-EksAIpGzEt)
 
-[See more on the uploading process](guides/upload-your-model.md)
+[See more](guides/upload-your-model.md)
 
 ### 2. Collect feedback on your model
 
@@ -51,14 +51,6 @@ Yes, that's all!
 ### 4. Turn feedback into tests
 
 ![](.gitbook/assets/Test.jpg)
-
-
-
-
-
-
-
-
 
 ## Guides: Jump right in
 
