@@ -39,7 +39,7 @@ If you don't want to use the widget or for custom upload, you can use the _uploa
 
 ## Example
 
-```
+```python
 !pip install ai-inspector
 
 from ai_inspector import ModelInspector
