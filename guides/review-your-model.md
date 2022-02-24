@@ -1,5 +1,10 @@
-# Creating your first task
+# Review your model
 
-{% hint style="info" %}
-**Good to know:** your product docs aren't just a reference of all your features! use them to encourage folks to perform certain actions and discover the value in your product.
-{% endhint %}
+To review your model, you can either
+
+* check it by yoursel
+* Invite pear ML engineer colleagues
+* Invite business users who might have business knowledge on your model
+
+
+

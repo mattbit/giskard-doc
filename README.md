@@ -34,19 +34,23 @@ Yes, that's all!
 
 ### 1. Upload a credit scoring model in Giskard
 
-![](.gitbook/assets/Upload.jpg)
+![](.gitbook/assets/Upload.png)
 
 [See full notebook here](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=g-EksAIpGzEt)
 
-### 2. Give feedback on your credit scoring model
+[See more on the uploading process](guides/upload-your-model.md)
 
+### 2. Collect feedback on your model
 
+![](<.gitbook/assets/Give feedbcack.jpg>)
 
 ### 3. Discuss and analyze feedback
 
+![](.gitbook/assets/Discussion.jpg)
+
 ### 4. Turn feedback into tests
 
-
+![](.gitbook/assets/Test.jpg)
 
 
 
@@ -78,3 +82,4 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 ## License
 
+This project is licensed under the terms of the `Apache Software License 2.0` license. See [LICENSE](https://github.com/Giskard-AI/ai-inspector/blob/main/LICENSE) for more details.
