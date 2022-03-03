@@ -1,54 +1,47 @@
-# 🤓 Getting started
+# 🤓 Giskard
 
-![](.gitbook/assets/Transparent.png)
+![](.gitbook/assets/logo\_50.jpg)
 
 {% hint style="success" %}
 Giskard empowers AI teams to create **better AI models.**\
 \
-We are building the first open source **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
+We are building the first <mark style="background-color:orange;">open-source</mark> **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
 {% endhint %}
 
 ### With Giskard, you
 
-* **Reduce risks**: Insuring yourself against business incidents caused by AI bugs
-* **Save time**: Investing in quality will save you time by reducing waste in AI pipelines
-* **Increase trust**: Aligning your tech and business stakeholders leads to better outcomes
+* <mark style="background-color:orange;">**Reduce risks**</mark>: Insuring yourself against business incidents caused by AI bugs
+* <mark style="background-color:orange;">**Save time**</mark>: Investing in quality will save you time by reducing waste in AI pipelines
+* <mark style="background-color:orange;">**Increase trust**</mark>: Aligning your tech and business stakeholders leads to better outcomes
 
 {% embed url="https://github.com/Giskard-AI/zeroth-project" %}
 Check out our GitHub!
 {% endembed %}
 
-## Want a quick demo?
-
-Check out a video overview of our product:
-
-{% embed url="https://www.youtube.com/watch?v=Eoc7PMpvw5k" %}
-
 ## Installation
 
-![](.gitbook/assets/installation-gif.gif)
+```batch
+git clone https://github.com/Giskard-AI/zeroth-project.git
+docker-compose up -d
+```
 
-Yes, that's all!
+Yes, that's all!  Then start inspecting some models at [http://localhost](http://localhost)
+
+{% hint style="info" %}
+**login**: admin  **password**: admin
+{% endhint %}
 
 ## Example
 
-### 1. Upload a credit scoring model in Giskard
-
-![](.gitbook/assets/Upload.png)
-
-[See full notebook](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=g-EksAIpGzEt)
-
-[See more](guides/upload-your-model.md)
-
-### 2. Collect feedback on your model
+### 1. Collect feedback on your model
 
 ![](<.gitbook/assets/Give feedbcack.jpg>)
 
-### 3. Discuss and analyze feedback
+### 2. Discuss and analyze feedback
 
-![](.gitbook/assets/Discussion.jpg)
+![](<.gitbook/assets/Discussion (1).jpg>)
 
-### 4. Turn feedback into tests
+### 3. Turn feedback into tests
 
 ![](.gitbook/assets/Test.jpg)
 

@@ -6,7 +6,6 @@ To install giskard, you need
 * git
 * docker
 * docker compose
-* poetry
 {% endhint %}
 
 ## Installation

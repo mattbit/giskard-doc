@@ -1,5 +1,9 @@
 # Upload your model
 
+{% hint style="info" %}
+You'll find an example of a running notebook [here](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=aZmCSK1xIIxb)
+{% endhint %}
+
 To upload the model you want to inspect, you need:
 
 * A model. For example, a scikit-learn predic\_proba function
@@ -34,7 +38,7 @@ Then you need to choose,
 * **API token**: you can generate your API token in the Admin tab
 
 {% hint style="info" %}
-If you don't want to use the widget or for custom upload, you can use the _upload\_model, upload\_df, or upload\_and\_df functions. For more detail, check the class_ [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py)__
+If you don't want to use the widget or for custom upload, you can use the _upload\_model, upload\_df, or upload\_and\_df functions. For more detail, check the class_ [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py)
 {% endhint %}
 
 ## Example
@@ -57,8 +61,6 @@ inspector = ModelInspector(
 
 inspector.inspect(credit)
 ```
-
-[Check the notebook](https://colab.research.google.com/drive/1sk4JRzt750yVugK8HLMD0vvO0HqOV5PI#scrollTo=aZmCSK1xIIxb)
 
 ## More details,
 
