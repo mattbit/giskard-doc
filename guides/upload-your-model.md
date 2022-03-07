@@ -4,7 +4,7 @@
 
 To get started with Giskard as fast as possible we've included a demo python notebook to Giskard.  Feel free to modify it to adapt it to your case!
 
-After running [docker-compose up -d](requirements.md) a python notebook is started automatically on [**http://localhost:18888/**](http://localhost:18888)****
+After running [docker-compose up -d](installation.md) a python notebook is started automatically on [**http://localhost:18888/**](http://localhost:18888)****
 
 This notebook already has `ai-inspector` installed and you may follow it to see how the models are uploaded to Giskard.&#x20;
 
@@ -26,7 +26,7 @@ To upload the model you want to inspect, you need:
 
 * A model. For example, a scikit-learn predict\_proba function
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
-* The Giskard's platform. To install it, check [requirements.md](requirements.md "mention")
+* The Giskard's platform. To install it, check [installation.md](installation.md "mention")
 
 Here are the two steps to inspect your model:
 

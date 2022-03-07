@@ -46,8 +46,8 @@ Yes, that's all!  Then start inspecting some models at [**http://localhost:19000
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/requirements.md" %}
-[requirements.md](guides/requirements.md)
+{% content-ref url="guides/installation.md" %}
+[installation.md](guides/installation.md)
 {% endcontent-ref %}
 
 {% content-ref url="guides/upload-your-model.md" %}
