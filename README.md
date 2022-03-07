@@ -5,12 +5,12 @@
 {% hint style="success" %}
 Giskard empowers AI teams to create **better AI models.**\
 \
-We are building the first <mark style="background-color:orange;">open-source</mark> **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
+We are building the first **open-source** **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
 {% endhint %}
 
-* <mark style="background-color:orange;">**Reduce risks**</mark>: Insuring yourself against business incidents caused by AI bugs
-* <mark style="background-color:orange;">**Save time**</mark>: Investing in quality will save you time by reducing waste in AI pipelines
-* <mark style="background-color:orange;">**Increase trust**</mark>: Aligning your tech and business stakeholders leads to better outcomes
+* **Reduce risks**: Insuring yourself against business incidents caused by AI bugs
+* **Save time**: Investing in quality will save you time by reducing waste in AI pipelines
+* **Increase trust**: Aligning your tech and business stakeholders leads to better outcomes
 
 {% embed url="https://github.com/Giskard-AI/giskard" %}
 
