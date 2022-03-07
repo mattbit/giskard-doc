@@ -1,4 +1,4 @@
-# 🤓 Giskard
+# 🤓 Getting started
 
 ![](.gitbook/assets/logo\_50.jpg)
 
@@ -13,6 +13,8 @@ We are building the first <mark style="background-color:orange;">open-source</ma
 * <mark style="background-color:orange;">**Increase trust**</mark>: Aligning your tech and business stakeholders leads to better outcomes
 
 {% embed url="https://github.com/Giskard-AI/giskard" %}
+
+{% embed url="https://discord.gg/bgTgpXpqVA" %}
 
 ## Installation
 
