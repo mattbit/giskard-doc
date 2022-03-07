@@ -63,16 +63,16 @@ If you don't want to use the widget or for custom upload, you can use the`upload
 from ai_inspector import ModelInspector
 
 inspector = ModelInspector(
-    prediction_function= clf.predict_proba,
-    prediction_task="classification",
-    input_types=input_types = {
+    prediction_function = clf.predict_proba,
+    prediction_task = "classification",
+    input_types = {
                'account_check_status':"category", 
                'duration_in_month':"numeric",
                'credit_history':"category",
                'purpose':"category",
                'credit_amount':"numeric"
                }
-    classification_labels=["Not default","Default"],
+    classification_labels = ["Not default","Default"],
 )
 
 inspector.inspect(credit)
