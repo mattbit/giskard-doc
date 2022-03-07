@@ -1,22 +1,6 @@
 # Upload your model
 
-### Quick start
-
-To get started with Giskard as fast as possible we've included a demo python notebook to Giskard on [**http://localhost:18888/**](http://localhost:18888) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
-
-This notebook already has `ai-inspector` installed and you may follow it to see how the models are uploaded to Giskard. In order to upload the model, you'll need to generate an API key from Giskard -> user profile page.
-
-{% hint style="info" %}
-A demo notebook is also available [here](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb)
-{% endhint %}
-
 ### Prerequisites
-
-In order to upload models and datasets to Giskard there needs to be an additional package installed in the environment where you train the models:
-
-```python
-pip install ai-inspector
-```
 
 To upload the model you want to inspect, you need:
 
@@ -24,9 +8,27 @@ To upload the model you want to inspect, you need:
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
 * The Giskard's platform. To install it, check [installation.md](installation.md "mention")
 
-Here are the two steps to inspect your model:
+{% hint style="info" %}
+**Demo notebooks:**
 
-### 1. Create a ModelInpsector object
+To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:18888/**](http://localhost:18888) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
+
+
+
+You can also download a demo notebook [here](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb) to execute it in your working environment
+{% endhint %}
+
+Here are the three steps to inspect your model:
+
+### 1. Load ai-inspector
+
+In order to upload models and datasets to Giskard, you'll need to install the library ai-inspector in your working Python environment.
+
+```python
+pip install ai-inspector
+```
+
+### 2. Create a ModelInpsector object
 
 `ModelInpector` Python class has the following argument
 
@@ -38,7 +40,7 @@ Here are the two steps to inspect your model:
 | `classification_threshold` | The probability threshold of your classification model. By default, it's equal to 0.5                                                                                                                                                                                                     | Optional\[float] = 0.5                                                  |
 | `classification_labels`    | The classification label of your target variable.                                                                                                                                                                                                                                         | Optional\[List\[str]] = None                                            |
 
-### 2. Inspect a dataset
+### 3. Inspect a dataset
 
 To inspect your pandas dataframe, you need to use the `inspect` function It opens the following widget
 
