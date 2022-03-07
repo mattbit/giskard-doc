@@ -54,7 +54,7 @@ Then you need to choose,
 * **API token**: you can generate your API token in the Admin tab of Giskard (login: `admin` ;  password: `admin` at `http://localhost:19000` if hosted locally)
 
 {% hint style="info" %}
-If you don't want to use the widget or for custom upload, you can use the _upload\_model, upload\_df, or upload\_and\_df functions. For more detail, check the_ [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) _class_
+If you don't want to use the widget or for custom upload, you can use the`upload_model` __ `upload_df`, or `upload_and_df` __ functions_._ For more detail, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
 {% endhint %}
 
 ## Example
