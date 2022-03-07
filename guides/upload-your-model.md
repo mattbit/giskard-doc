@@ -78,6 +78,4 @@ inspector = ModelInspector(
 inspector.inspect(credit)
 ```
 
-## More details,
-
-To contribute, check our [Github repository](https://github.com/Giskard-AI/ai-inspector)
+Now you uploaded your model, let's [review-your-model.md](review-your-model.md "mention")
