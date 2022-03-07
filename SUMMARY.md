@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🤓 Giskard](README.md)
+* [🤓 Getting started](README.md)
 
 ## Guides
 
