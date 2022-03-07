@@ -8,24 +8,21 @@ Giskard empowers AI teams to create **better AI models.**\
 We are building the first <mark style="background-color:orange;">open-source</mark> **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
 {% endhint %}
 
-### With Giskard, you
-
 * <mark style="background-color:orange;">**Reduce risks**</mark>: Insuring yourself against business incidents caused by AI bugs
 * <mark style="background-color:orange;">**Save time**</mark>: Investing in quality will save you time by reducing waste in AI pipelines
 * <mark style="background-color:orange;">**Increase trust**</mark>: Aligning your tech and business stakeholders leads to better outcomes
 
-{% embed url="https://github.com/Giskard-AI/zeroth-project" %}
-Check out our GitHub!
-{% endembed %}
+{% embed url="https://github.com/Giskard-AI/giskard" %}
 
 ## Installation
 
 ```batch
-git clone https://github.com/Giskard-AI/zeroth-project.git
-docker-compose up -d
+git clone https://github.com/Giskard-AI/giskard.git
+cd giskard
+docker-compose build --parallel && docker-compose up -d
 ```
 
-Yes, that's all!  Then start inspecting some models at [http://localhost](http://localhost)
+Yes, that's all!  Then start inspecting some models at [**http://localhost:19000/**](http://localhost:19000)****
 
 {% hint style="info" %}
 **login**: admin  **password**: admin

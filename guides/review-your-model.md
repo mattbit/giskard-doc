@@ -58,7 +58,7 @@ You can also generate a text explanation to have a look at the contribution of e
 
 ![Explanation for a textual feature](../.gitbook/assets/lime.jpg)
 
-It then runs the [LIME ](https://christophm.github.io/interpretable-ml-book/lime.html)values of each word in your textual feature: green highlighting means a positive contribution to the selected classification label, while red highlighting means a negative contribution.
+It then returns the [LIME ](https://christophm.github.io/interpretable-ml-book/lime.html)values of each word in your textual feature: green highlighting means a positive contribution to the selected classification label, while red highlighting means a negative contribution.
 
 ## Give feedback
 
