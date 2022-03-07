@@ -2,13 +2,9 @@
 
 ### Quick start
 
-To get started with Giskard as fast as possible we've included a demo python notebook to Giskard.  Feel free to modify it to adapt it to your case!
+To get started with Giskard as fast as possible we've included a demo python notebook to Giskard on [**http://localhost:18888/**](http://localhost:18888) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
 
-After running [docker-compose up -d](installation.md) a python notebook is started automatically on [**http://localhost:18888/**](http://localhost:18888)****
-
-This notebook already has `ai-inspector` installed and you may follow it to see how the models are uploaded to Giskard.&#x20;
-
-In order to upload the model you'll need to generate an API key from Giskard -> user profile page.
+This notebook already has `ai-inspector` installed and you may follow it to see how the models are uploaded to Giskard. In order to upload the model, you'll need to generate an API key from Giskard -> user profile page.
 
 {% hint style="info" %}
 A demo notebook is also available [here](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb)
@@ -18,9 +14,9 @@ A demo notebook is also available [here](https://github.com/Giskard-AI/giskard/b
 
 In order to upload models and datasets to Giskard there needs to be an additional package installed in the environment where you train the models:
 
-{% hint style="info" %}
-`pip install ai-inspector`
-{% endhint %}
+```python
+pip install ai-inspector
+```
 
 To upload the model you want to inspect, you need:
 
