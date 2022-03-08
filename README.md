@@ -38,7 +38,7 @@ Yes, that's all!  Then start inspecting some models at [**http://localhost:19000
 
 ### 2. Discuss and analyze feedback
 
-![](<.gitbook/assets/Discussion (1).jpg>)
+![](<.gitbook/assets/Screenshot 2022-03-08 at 10.00.08.png>)
 
 ### 3. Turn feedback into tests
 

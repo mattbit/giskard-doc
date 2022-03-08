@@ -111,7 +111,7 @@ Grouping feedback by feature enables you to check which feature collected the mo
 
 You can click on particular feedback to re-inspect the example and discuss it with the feedback provider.
 
-![Discuss a feedback with the feedback provider](../.gitbook/assets/Discussion.jpg)
+![](<../.gitbook/assets/Screenshot 2022-03-08 at 10.00.08 (1).png>)
 
 {% hint style="info" %}
 Discussion can be important to clarify the feedback context and find the best action to correct the model.
