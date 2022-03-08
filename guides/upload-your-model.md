@@ -42,7 +42,7 @@ pip install ai-inspector
 
 ### 3. Inspect a dataset
 
-To inspect your pandas dataframe, you need to use the `inspect` function It opens the following widget
+To inspect your pandas dataframe, you need to use the`inspect` function It opens the following widget
 
 ![](../.gitbook/assets/widget.jpg)
 
