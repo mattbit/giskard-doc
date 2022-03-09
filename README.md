@@ -14,7 +14,7 @@ We are building the first **open-source** **Quality Assurance** platform that au
 
 {% embed url="https://github.com/Giskard-AI/giskard" %}
 
-{% embed url="https://discord.gg/bgTgpXpqVA" %}
+{% embed url="https://discord.gg/ABvfpbu69R" %}
 
 ## Installation
 
