@@ -21,7 +21,7 @@ We are building the first **open-source** **Quality Assurance** platform that au
 ```batch
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-docker-compose build --parallel && docker-compose up -d
+docker-compose up -d
 ```
 
 Yes, that's all!  Then start inspecting some models at [**http://localhost:19000/**](http://localhost:19000)****

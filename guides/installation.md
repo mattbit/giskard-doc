@@ -15,7 +15,7 @@ To install giskard, you need
 ```batch
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-docker-compose build --parallel && docker-compose up -d
+docker-compose up -d
 ```
 
 once the docker-compose starts all of the modules you'll be able to open Giskard at
