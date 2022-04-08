@@ -41,7 +41,7 @@ pip install ai-inspector
 | `classification_labels`    | The classification label of your target variable.                                                                                                                                                                                                               | Optional\[List\[str]] = None                                            |
 
 {% hint style="info" %}
-It's better to upload `prediction_function` as a function that wraps the whole prediction pipeline: preprocessing (categegorical encoding, etc.) + ML prediction. Indeed, the more interpretable the data input of `prediction_function`, the easier the inspection stage will be.
+It's better to upload `prediction_function` as a function that wraps the **whole** prediction pipeline: all the preprocessing steps (categegorical encoding, etc.) + ML prediction. This is key for a robust and interpretable inspection stage!
 {% endhint %}
 
 
