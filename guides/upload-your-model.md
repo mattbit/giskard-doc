@@ -11,7 +11,7 @@ To upload the model you want to inspect, you need:
 {% hint style="info" %}
 **Demo notebooks:**
 
-To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:18888/**](http://localhost:18888) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
+To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
 
 
 
