@@ -38,7 +38,7 @@ Password: **`admin`**
 
 ```shell
 git pull
-docker-compose pull && docker-compose up -d
+docker-compose down && docker-compose pull && docker-compose up -d
 ```
 
 You're all set to try Giskard in action, upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
