@@ -44,7 +44,19 @@ pip install ai-inspector
 It's better to upload `prediction_function` as a function that wraps the **whole** prediction pipeline: all the preprocessing steps (categegorical encoding, etc.) + ML prediction. This is key for a robust and interpretable inspection stage!
 {% endhint %}
 
+### 3. Inspect a dataset
 
+To inspect the model, you need to apply it to some data examples that might interest you to inspect. For example, it could be either:
+
+* Your test or train set
+* A sub-population of your data
+* A dataset composed of errors of your model (false positive, false negatives, etc.)
+
+{% hint style="info" %}
+This dataset might contain columns that are even not features of the model! The only requirement is that it should be a pandas dataframe that can be executed as an argument of the `prediction_function.`&#x20;
+{% endhint %}
+
+To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
 
 ![](../.gitbook/assets/widget.jpg)
 
@@ -56,7 +68,7 @@ Then you need to choose,
 * **API token**: you can generate your API token in the Admin tab of Giskard (login: `admin` ;  password: `admin` at `http://localhost:19000` if hosted locally)
 
 {% hint style="info" %}
-If you don't want to use the widget or for custom upload, you can use the`upload_model` __ `upload_df`, or `upload_and_df` __ functions_._ For more detail, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
+If you don't want to use the widget or for custom upload, you can use the`upload_model` __ `upload_df`, or `upload_and_df` __ methods from `ModelInpector`_._ For more detail, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
 {% endhint %}
 
 ## Example
