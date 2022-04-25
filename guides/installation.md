@@ -34,7 +34,7 @@ Password: **`admin`**
 
 ## Update
 
-#### In order to upgrade Giskard to the latest version please run the following in your Giskard distribution directory
+In order to upgrade Giskard to the latest version, please run the following in your Giskard distribution directory
 
 ```shell
 git pull
