@@ -6,6 +6,7 @@ To install giskard, you need
 * ``[`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)``
 * ``[`docker`](https://docs.docker.com/get-docker/)``
 * ``[`docker`-`compose`](https://docs.docker.com/compose/install/)``
+* ``[`python 3.7`](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0)``
 {% endhint %}
 
 ## Installation
@@ -32,7 +33,9 @@ Login: **`admin`**
 Password: **`admin`**
 {% endhint %}
 
-## Update
+You're all set to try Giskard in action, upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
+
+## Upgrade Giskard to the latest version
 
 In order to upgrade Giskard to the latest version, please run the following in your Giskard distribution directory
 
@@ -40,5 +43,3 @@ In order to upgrade Giskard to the latest version, please run the following in y
 git pull
 docker-compose down && docker-compose pull && docker-compose up -d
 ```
-
-You're all set to try Giskard in action, upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
