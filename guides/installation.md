@@ -3,10 +3,10 @@
 {% hint style="info" %}
 To install giskard, you need
 
-* ``[`git`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)``
-* ``[`docker`](https://docs.docker.com/get-docker/)``
-* ``[`docker`-`compose`](https://docs.docker.com/compose/install/)``
-* ``[`python 3.7`](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0)``
+* `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
+* `docker (`[`download`](https://docs.docker.com/get-docker/)`)`
+* `docker`-`compose (`[`download`](https://docs.docker.com/compose/install/)`)`
+* `python 3.7 (`[`setup virtual environment`](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0)`)`
 {% endhint %}
 
 ## Installation
