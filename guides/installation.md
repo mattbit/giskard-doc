@@ -9,9 +9,7 @@ To install giskard, you need
 * `python 3.7 (`[`setup virtual environment`](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0)`)`
 {% endhint %}
 
-## Installation
-
-#### To start Giskard locally run the following commands
+Run the following commands to install Giskard in your server
 
 ```shell
 git clone https://github.com/Giskard-AI/giskard.git

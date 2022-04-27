@@ -22,11 +22,15 @@ Here are the three steps to inspect your model:
 
 ### 1. Load ai-inspector
 
-In order to upload models and datasets to Giskard, you'll need to install the library ai-inspector in your working Python environment.
+In order to upload models and datasets to Giskard, you'll need to install the library ai-inspector in your Python **3.7** environment (see the [installation.md](installation.md "mention")):
 
 ```python
 pip install ai-inspector
 ```
+
+{% hint style="info" %}
+If you have another version of Python, create a [virtual 3.7 Python environment](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0).
+{% endhint %}
 
 ### 2. Create a ModelInpsector object
 
