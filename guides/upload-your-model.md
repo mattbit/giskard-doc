@@ -28,7 +28,7 @@ In order to upload models and datasets to Giskard, you'll need to install the li
 pip install ai-inspector
 ```
 
-{% hint style="info" %}
+{% hint style="danger" %}
 If you have another version of Python, create a [virtual 3.7 Python environment](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0).
 {% endhint %}
 
@@ -40,24 +40,26 @@ If you have another version of Python, create a [virtual 3.7 Python environment]
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | `prediction_function`      | <p>The model you want to predict. It could be any Python function with the signature of </p><ul><li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression.predict_proba">predict_proba</a> for classification</li><li><a href="https://github.com/scikit-learn/scikit-learn/blob/baf828ca1/sklearn/linear_model/_base.py#L348">predict</a> for regression</li></ul> | <p>Callable[</p><p>[pd.DataFrame], Iterable[Union[str, float, int]]</p> |
 | `prediction_task`          | <ul><li>"classification" for classification model</li><li>"regression" for regression model</li></ul>                                                                                                                                                                                                                                                                                                                                                         | str                                                                     |
-| `input_types`              | A dictionary of column names and types (`numeric`, `category` or `text`) of the dataframe used for inspection. So`input_types`contains **at least** the features of `prediction_function`                                                                                                                                                                                                                                                                     | Dict\[str, str]                                                         |
+| `input_types`              | <p>A dictionary of column names and their types (<code>numeric</code>, <code>category</code> or <code>text</code>) containing: </p><ul><li>At least all the argument features of <code>prediction_function</code></li><li>Possibly other variables in the dataframe used for inspection (see following section)</li></ul>                                                                                                                                     | Dict\[str, str]                                                         |
 | `classification_threshold` | The probability threshold in the case of a binary classification model. By default, it's equal to 0.5                                                                                                                                                                                                                                                                                                                                                         | Optional\[float] = 0.5                                                  |
 | `classification_labels`    | The classification labels of your target variable in the case of classification task                                                                                                                                                                                                                                                                                                                                                                          | Optional\[List\[str]] = None                                            |
 
-{% hint style="info" %}
+{% hint style="warning" %}
 It's better to upload `prediction_function` as a function that **wraps the whole** prediction pipeline: all the preprocessing steps (categegorical encoding, etc.) + ML prediction. This is key for a robust and interpretable inspection stage!
 {% endhint %}
 
 ### 3. Inspect a dataframe
 
-To inspect the model, you need to apply it to a Pandas dataframe that contains some data examples that might interest you to inspect. This dataframe should have `input_types` as column names and types. For example, this dataframe could be either:
+To inspect the model, you need to apply it to a Pandas dataframe that contains some data examples that might interest you to inspect. For example, this dataframe could be either:
 
 * Your test or train set
 * A sub-population of your data
 * A dataset composed of errors of your model (false positive, false negatives, etc.)
 
-{% hint style="info" %}
-The only requirement for this dataframe `df`is that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe may contain columns that are even **not** features of the model (ex: column\_id, etc.)
+This dataframe `df` columns should contain all the keys of the dictionary`input_types`
+
+{% hint style="danger" %}
+Be careful that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe `df` may contain columns that are even **not** features of the model (ex: column\_id, etc.)
 {% endhint %}
 
 To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
@@ -72,7 +74,7 @@ Then you need to choose,
 * **API token**: you can generate your API token in the Admin tab of Giskard (login: `admin` ;  password: `admin` at `http://localhost:19000` if hosted locally)
 
 {% hint style="info" %}
-If you don't want to use the widget or for custom upload, you can use the`upload_model` __ `upload_df`, or `upload_and_df` __ methods from `ModelInpector`_._ For more detail, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
+If you **don't want to use the widget** or for custom upload, you can use the functions`upload_model,` __ `upload_df` or `upload_and_df` from `ModelInpector`_._ For more details about these functions, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
 {% endhint %}
 
 ## Example
