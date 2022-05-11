@@ -40,24 +40,24 @@ If you have another version of Python, create a [virtual 3.7 Python environment]
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
 | `prediction_function`      | <p>The model you want to predict. It could be any Python function with the signature of </p><ul><li><a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression.predict_proba">predict_proba</a> for classification</li><li><a href="https://github.com/scikit-learn/scikit-learn/blob/baf828ca1/sklearn/linear_model/_base.py#L348">predict</a> for regression</li></ul> | <p>Callable[</p><p>[pd.DataFrame], Iterable[Union[str, float, int]]</p> |
 | `prediction_task`          | <ul><li>"classification" for classification model</li><li>"regression" for regression model</li></ul>                                                                                                                                                                                                                                                                                                                                                         | str                                                                     |
-| `input_types`              | A dictionary of feature names with their types:`numeric`, `category` or `text`                                                                                                                                                                                                                                                                                                                                                                                | Dict\[str, str]                                                         |
+| `input_types`              | A dictionary of column names and types (`numeric`, `category` or `text`) of the dataframe used for inspection. So`input_types`contains **at least** the features of `prediction_function`                                                                                                                                                                                                                                                                     | Dict\[str, str]                                                         |
 | `classification_threshold` | The probability threshold in the case of a binary classification model. By default, it's equal to 0.5                                                                                                                                                                                                                                                                                                                                                         | Optional\[float] = 0.5                                                  |
 | `classification_labels`    | The classification labels of your target variable in the case of classification task                                                                                                                                                                                                                                                                                                                                                                          | Optional\[List\[str]] = None                                            |
 
 {% hint style="info" %}
-It's better to upload `prediction_function` as a function that wraps the **whole** prediction pipeline: all the preprocessing steps (categegorical encoding, etc.) + ML prediction. This is key for a robust and interpretable inspection stage!
+It's better to upload `prediction_function` as a function that **wraps the whole** prediction pipeline: all the preprocessing steps (categegorical encoding, etc.) + ML prediction. This is key for a robust and interpretable inspection stage!
 {% endhint %}
 
-### 3. Inspect a dataset
+### 3. Inspect a dataframe
 
-To inspect the model, you need to apply it to some data examples that might interest you to inspect. For example, it could be either:
+To inspect the model, you need to apply it to a Pandas dataframe that contains some data examples that might interest you to inspect. This dataframe should have `input_types` as column names and types. For example, this dataframe could be either:
 
 * Your test or train set
 * A sub-population of your data
 * A dataset composed of errors of your model (false positive, false negatives, etc.)
 
 {% hint style="info" %}
-This dataset might contain columns that are even not features of the model! The only requirement is that it should be a pandas dataframe that can be executed as an argument of the `prediction_function.`&#x20;
+The only requirement for this dataframe `df`is that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe may contain columns that are even **not** features of the model (ex: column\_id, etc.)
 {% endhint %}
 
 To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
