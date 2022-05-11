@@ -59,7 +59,7 @@ To inspect the model, you need to apply it to a Pandas dataframe that contains s
 This dataframe `df` columns should contain all the keys of the dictionary`input_types`
 
 {% hint style="danger" %}
-Be careful that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe `df` may contain columns that are even **not** features of the model (ex: column\_id, etc.)
+Be careful that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe `df` may contain columns that are even **not** features of the model (ex: sample\_id, etc.)
 {% endhint %}
 
 To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
