@@ -56,10 +56,13 @@ To inspect the model, you need to apply it to a Pandas dataframe that contains s
 * A sub-population of your data
 * A dataset composed of errors of your model (false positive, false negatives, etc.)
 
-This dataframe `df` columns should contain all the keys of the dictionary`input_types`
+This dataframe `df` should contain&#x20;
+
+* all the keys of the dictionary`input_types`  as columns
+* &#x20;possibly other columns that are even **not** features of the model (ex: sample\_id, etc.). These extra columns can be useful to inspect the model
 
 {% hint style="danger" %}
-Be careful that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ So this dataframe `df` may contain columns that are even **not** features of the model (ex: sample\_id, etc.)
+Make sure that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ This is the only requirement to upload a model on Giskard!
 {% endhint %}
 
 To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
