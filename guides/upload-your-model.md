@@ -62,9 +62,9 @@ To inspect the model with the dataframe, you need the`inspect` function from the
 Then you need to choose,
 
 * **Target column**: it's the target variable in your dataset
-* **Giskard UR**L: if Giskard is hosted locally, it should be `http://localhost:19000`
+* **Giskard URL**: if Giskard is hosted locally, it should be `http://localhost:19000`
 * **Project key**: choose a project name you like. You can upload different model versions and datasets in the same project
-* **API token**: you can generate your API token in the Admin tab of Giskard (login: `admin` ;  password: `admin` at `http://localhost:19000` if hosted locally)
+* **API token**: you can generate your API token in the Admin tab of Giskard (login: `admin` ;  password: `admin` at `http://localhost:19000` if hosted locally, see the [installation.md](installation.md "mention"))
 
 {% hint style="info" %}
 If you **don't want to use the widget** or for custom upload, you can use the functions`upload_model,` __ `upload_df` or `upload_and_df` from `ModelInpector`_._ For more details about these functions, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
