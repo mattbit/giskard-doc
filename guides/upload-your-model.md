@@ -8,14 +8,7 @@ To upload the model you want to inspect, you need:
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
 * The Giskard's platform. To install it, check [installation.md](installation.md "mention")
 
-{% hint style="info" %}
-**Example notebooks:**
-
-* You can download an **example notebook** [here](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb) to execute it in your working environment
-* To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
-{% endhint %}
-
-Here are the three steps to inspect your model:
+Here are the **3 steps** to inspect your model:
 
 ### 1. Load ai-inspector
 
@@ -53,16 +46,16 @@ To inspect the model, you need to apply it to a Pandas dataframe that contains s
 * A sub-population of your data
 * A dataset composed of errors of your model (false positive, false negatives, etc.)
 
-This dataframe `df` should contain&#x20;
+This Pandas dataframe `df` should contain&#x20;
 
-* all the keys of the dictionary`input_types`  as columns
-* &#x20;possibly other columns that are even **not** features of the model (ex: sample\_id, etc.). These extra columns can be useful to inspect the model
+* All the keys of the dictionary`input_types`  as columns
+* Possibly other columns that are even **not** features of the model (ex: **actual** value of the target variables, sample\_id, etc.). These extra columns can be very useful to inspect the model, especially the **actual target variable** if it's available.
 
 {% hint style="danger" %}
 Make sure that `prediction_function`(`df`\[`input_types`.keys()]) gets executed **without an error**. __ This is the only requirement to upload a model on Giskard!
 {% endhint %}
 
-To inspect the model with the dataframe, you need the`inspect` method from the `ModelInpector` class:
+To inspect the model with the dataframe, you need the`inspect` function from the `ModelInpector` class:
 
 ![](../.gitbook/assets/widget.jpg)
 
@@ -77,7 +70,7 @@ Then you need to choose,
 If you **don't want to use the widget** or for custom upload, you can use the functions`upload_model,` __ `upload_df` or `upload_and_df` from `ModelInpector`_._ For more details about these functions, check the [_ModelInspector_](https://github.com/Giskard-AI/ai-inspector/blob/main/ai\_inspector/inspector.py#L34) __ class
 {% endhint %}
 
-## Example
+## Examples
 
 ```python
 from ai_inspector import ModelInspector
@@ -95,11 +88,14 @@ inspector = ModelInspector(
     classification_labels = ["Not default","Default"],
 )
 
-inspector.inspect(credit)
+inspector.inspect(df)
 ```
 
-**``**[**Download demo notebook**](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb)****
+{% hint style="info" %}
+**Example notebooks:**
 
-
+* You can download an **example notebook** [here](https://github.com/Giskard-AI/giskard/blob/main/backend/demo-notebook/notebook/German\_credit\_scoring\_giskard.ipynb) to execute it in your working environment
+* To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation.md](installation.md "mention")). Feel free to modify it to adapt it to your case! &#x20;
+{% endhint %}
 
 Now you uploaded your model, let's [review-your-model.md](review-your-model.md "mention")
