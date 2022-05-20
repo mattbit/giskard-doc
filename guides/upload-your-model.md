@@ -22,7 +22,7 @@ pip install ai-inspector
 If you have another version of Python, create a [virtual 3.7 Python environment](https://stackoverflow.com/questions/52816156/how-to-create-virtual-environment-for-python-3-7-0).
 {% endhint %}
 
-### 2. Create a ModelInpsector object
+### 2. Create a ModelInspector object
 
 `ModelInpector` Python class has the following argument
 
