@@ -1,4 +1,4 @@
-# 🤓 Getting started
+# Get started
 
 ![](<.gitbook/assets/Screenshot 2022-06-01 at 10.15.28 (1).png>)
 

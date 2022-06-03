@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🤓 Getting started](README.md)
+* [Get started](README.md)
 
 ## Guides
 
