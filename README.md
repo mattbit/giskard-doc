@@ -1,16 +1,13 @@
 # 🤓 Getting started
 
-![](.gitbook/assets/logo\_50.jpg)
+![](<.gitbook/assets/Screenshot 2022-06-01 at 10.15.28 (1).png>)
 
 {% hint style="success" %}
-Giskard empowers AI teams to create **better AI models.**\
-\
-We are building the first **open-source** **Quality Assurance** platform that automates inspection, testing & monitoring of AI models across platforms, from prototype to production.
+**Open-Source CI/CD platform for ML teams. Deliver ML products, better & faster.**&#x20;
 {% endhint %}
 
-* **Reduce risks**: Insuring yourself against business incidents caused by AI bugs
-* **Save time**: Investing in quality will save you time by reducing waste in AI pipelines
-* **Increase trust**: Aligning your tech and business stakeholders leads to better outcomes
+* **Collaborate faster** with **feedback** from business stakeholders.
+* **Deploy automated tests** to eliminate regressions, errors & biases.
 
 {% embed url="https://github.com/Giskard-AI/giskard" %}
 
@@ -24,7 +21,7 @@ cd giskard
 docker-compose up -d
 ```
 
-Yes, that's all!  Then start inspecting some models at [**http://localhost:19000/**](http://localhost:19000)****
+Yes, that's all!  Then start inspecting some models at [**http://localhost:19000/**](http://localhost:19000/)****
 
 {% hint style="info" %}
 **login**: admin  **password**: admin

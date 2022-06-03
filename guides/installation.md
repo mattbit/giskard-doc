@@ -20,7 +20,7 @@ docker-compose up -d
 once the docker-compose starts all of the modules you'll be able to open Giskard at
 
 {% hint style="info" %}
-[**http://localhost:19000/**](http://localhost:19000)****
+[**http://localhost:19000/**](http://localhost:19000/)****
 {% endhint %}
 
 The default credentials are
