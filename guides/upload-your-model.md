@@ -78,9 +78,11 @@ credit_scoring.upload_model_and_df(
     model_type='classification',
     df=test_data,
     column_types={
+        'credit_id':'category',
         'credit_amount':'numeric',
         'credit_category':'category',
         'credit_application':'text',
+        'Is_default': 'category'
         },
     target = 'Is_default',
     feature_names=['credit_amount','credit_category','credit_application'],
