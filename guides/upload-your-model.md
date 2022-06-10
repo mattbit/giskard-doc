@@ -29,8 +29,8 @@ url = "http://localhost:19000" #if Giskard is installed locally (for installatio
 token = "YOUR GENERATED TOKEN" #you can generate your API token in the Admin tab of the Giskard application (for installation, see: https://docs.giskard.ai/start/guides/installation) 
 client = GiskardClient(url, token)
 
-project = client.create_project("PROJECT_KEY", "PROJECT_NAME", "DESCRIPTION"). 
-#If your project is already created use project = client.get_project("EXISTING_PROJECT_KEY")
+project = client.create_project("project_key", "PROJECT_NAME", "DESCRIPTION") #Choose the arguments you want. But "project_key" should be unique and in lower case
+#If your project is already created use project = client.get_project("existing_project_key")
 ```
 
 {% hint style="info" %}
@@ -70,8 +70,15 @@ Make sure that `prediction_function`(`df`\[feature\_names]) gets executed **with
 ## Examples
 
 ```python
+from giskard.giskard_client import GiskardClient
+
 client = GiskardClient(url, token)
-credit_scoring = client.create_project("Credit_scoring", "Credit scoring", "Predict the default probabilities of a credit demand")
+
+#If you're creating your project for the first time
+credit_scoring = client.create_project("credit_scoring", "Credit scoring project", "Predict the default probabilities of a credit demand")
+
+#If your project is already created use 
+#project = client.get_project("credit_scoring")
 
 credit_scoring.upload_model_and_df(
     prediction_function=clf.predict_proba,
