@@ -15,7 +15,7 @@ Run the following commands to install Giskard in your server
 ```shell
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-docker-compose up -d
+docker-compose up -d --force-recreate
 ```
 
 once the docker-compose starts all of the modules you'll be able to open Giskard at
