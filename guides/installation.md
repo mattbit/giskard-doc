@@ -45,25 +45,14 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
 
 ## Install  new Python library
 
-If you need custom Python libraries that are not in pre-installed in Giskard, you have two possibilities
+If you need custom Python libraries that are not pre-installed in Giskard:
 
-### 1. Update the toml file
-
-1. Go to `backend/app/pyproject.toml`
+1. Go to `ml-worker/pyproject.toml`
    1. If the library you want to install is written as a comment in the list, just uncomment it
-   2. If the library you want to install is not in the list, just add it
+   2. If the library you want to install is not in the list, just add it to the list
 2. From the root of the Giskard directory run
 
 ```
 docker-compose stop backend
 docker-compose up --build backend
-```
-
-### 2. Write the docker file
-
-1. Go to the dockerfile of the container Ml-worker
-2. Write
-
-```
-run pip install <your library>
 ```
