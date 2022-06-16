@@ -42,3 +42,28 @@ In order to upgrade Giskard to the latest version, please run the following in y
 git pull
 docker-compose down && docker-compose pull && docker-compose up -d --force-recreate
 ```
+
+## Install  new Python library
+
+If you need custom Python libraries that are not in pre-installed in Giskard, you have two possibilities
+
+### 1. Update the toml file
+
+1. Go to `backend/app/pyproject.toml`
+   1. If the library you want to install is written as a comment in the list, just uncomment it
+   2. If the library you want to install is not in the list, just add it
+2. From the root of the Giskard directory run
+
+```
+docker-compose stop backend
+docker-compose up --build backend
+```
+
+### 2. Write the docker file
+
+1. Go to the dockerfile of the container Ml-worker
+2. Write
+
+```
+run pip install <your library>
+```
