@@ -4,7 +4,7 @@
 
 To upload the model you want to inspect, you need:
 
-* A model. For example, a _scikit-learn, Tensorflow, HuggingFace, catboost_ python functions
+* A model. For example, a _scikit-learn, Tensorflow, HuggingFace, catboost, PyTorch, ... P_ython functions
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
 * The Giskard's platform. To install it, check [installation.md](installation.md "mention")
 

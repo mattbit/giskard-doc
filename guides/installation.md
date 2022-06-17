@@ -53,6 +53,6 @@ If you need custom Python libraries that are not pre-installed in Giskard:
 2. From the root of the Giskard directory run
 
 ```
-docker-compose stop backend
-docker-compose up --build backend
+docker-compose stop ml-worker
+docker-compose up --ml-worker
 ```
