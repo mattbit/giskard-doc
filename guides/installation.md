@@ -54,5 +54,6 @@ If you need custom Python libraries that are not pre-installed in Giskard:
 
 ```
 docker-compose stop ml-worker
+docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
 docker-compose up ml-worker
 ```
