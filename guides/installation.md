@@ -43,17 +43,25 @@ git pull
 docker-compose down && docker-compose pull && docker-compose up -d --force-recreate
 ```
 
-## Install  new Python library
+## Install additional Python library
 
-If you need custom Python libraries that are not pre-installed in Giskard:
+If you need specific Python libraries that are not pre-installed in Giskard and that are available in PypI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
 
 1. Go to `giskard/giskard-ml-worker/pyproject.toml`
-   1. If the library you want to install is written as a comment in the list, just uncomment it
-   2. If the library you want to install is not in the list, just add it to the list
-2. From the root of the Giskard directory run
+2. Add your library to the list using the following guidelines: [https://python-poetry.org/docs/dependency-specification/](https://python-poetry.org/docs/dependency-specification/)
+3. From the root of the Giskard directory run
 
 ```
 docker-compose stop ml-worker
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
 docker-compose up ml-worker
 ```
+
+## Install a new Python version
+
+Giskard application is working on Python 3.7, if you use another Python version (3.9 or 3.10 for instance), please execute the following commands:
+
+1. Change Python version in giskard/giskard-ml-worker/ml-worker.dockerfile
+2. docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
+3. docker-compose down ml-worker && docker-compose up ml-worker
+
