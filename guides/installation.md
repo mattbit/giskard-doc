@@ -62,6 +62,10 @@ docker-compose up ml-worker
 Giskard application is working on Python 3.7, if you use another Python version (3.9 or 3.10 for instance), please execute the following commands:
 
 1. Change Python version in giskard/giskard-ml-worker/ml-worker.dockerfile
-2. docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-3. docker-compose down ml-worker && docker-compose up ml-worker
+2. Run the following command lines
+
+```
+docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
+docker-compose down ml-worker && docker-compose up ml-worker
+```
 
