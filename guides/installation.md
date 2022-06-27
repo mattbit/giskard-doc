@@ -43,7 +43,7 @@ git pull
 docker-compose down && docker-compose pull && docker-compose up -d --force-recreate
 ```
 
-## Install additional Python library
+## Install additional Python libraries
 
 If you need specific Python libraries that are not pre-installed in Giskard and that are available in PypI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
 
