@@ -45,13 +45,18 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
 
 ## Install additional Python libraries
 
-If you need specific Python libraries that are not pre-installed in Giskard and that are available in PypI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
+If you need specific Python libraries that are not pre-installed in Giskard and that are available in PyPI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
 
-1. Go to `giskard/giskard-ml-worker/pyproject.toml`
-2. Add your library to the list using the following guidelines: [https://python-poetry.org/docs/dependency-specification/](https://python-poetry.org/docs/dependency-specification/)
-3. From the root of the Giskard directory run
+1. Go to `giskard/giskard-ml-worker/ml-worker.dockerfile`
+2. Below the line `RUN bash -c "if [ $INSTALL_DEV == 'true' ]` , write the following line:&#x20;
 
+```bash
+RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally, Github, PyPI, etc. See: https://python-poetry.org/docs/cli/#add etc
 ```
+
+&#x20; 3\. From the root of the Giskard directory run
+
+```bash
 docker-compose stop ml-worker
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
 docker-compose up ml-worker
@@ -64,7 +69,7 @@ Giskard application is working on Python 3.7, if you use another Python version 
 1. Change Python version in `giskard/giskard-ml-worker/ml-worker.dockerfile`
 2. Run the following command lines
 
-```
+```bash
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
 docker-compose down ml-worker && docker-compose up ml-worker
 ```
