@@ -74,3 +74,6 @@ docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
 docker-compose down ml-worker && docker-compose up ml-worker -d
 ```
 
+## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
+
+If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;

@@ -116,3 +116,7 @@ You can click on particular feedback to re-inspect the example and discuss it wi
 {% hint style="info" %}
 Discussion can be important to clarify the feedback context and find the best action to correct the model.
 {% endhint %}
+
+## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
+
+If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;

@@ -105,3 +105,7 @@ credit_scoring.upload_model_and_df(
 {% endhint %}
 
 Now you uploaded your model, let's [review-your-model.md](review-your-model.md "mention")
+
+## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
+
+If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;
