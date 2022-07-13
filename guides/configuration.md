@@ -22,12 +22,12 @@ To reinforce security there's no default value of the secret key, whenever the b
 
 For production instances, it's preferred to keep user sessions alive no matter whether the server was rebooted or not. In this case, the JWT secret can be set from the outside by specifying `GISKARD_JWT_SECRET` environment variable. Its value should contain a base64 encoded bytes sequence of at least 128 bytes.
 
-The following script can generate and store a secret key of 512 bytes:
+The following script can generate and store a secret key of 256 bytes:
 
 ```bash
 # for zsh
-echo export GISKARD_JWT_SECRET=`openssl rand -base64 512 | tr -d '\n'` >> ~/.zshrc
+echo export GISKARD_JWT_SECRET=`openssl rand -base64 256 | tr -d '\n'` >> ~/.zshrc
 
 # for bash
-echo export GISKARD_JWT_SECRET=`openssl rand -base64 512 | tr -d '\n'` >> ~/.bashrc
+echo export GISKARD_JWT_SECRET=`openssl rand -base64 256 | tr -d '\n'` >> ~/.bashrc
 ```
