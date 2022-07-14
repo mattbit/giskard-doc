@@ -1,4 +1,4 @@
-# Upload your model
+# Upload your data & model
 
 ## Prerequisites
 
@@ -8,7 +8,7 @@ To upload the model you want to inspect, you need:
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
 * The Giskard's platform. To install it, check [installation.md](installation.md "mention")
 
-## Steps to upload your model
+## Steps to upload your data & model
 
 ### 1. Install Giskard library
 
