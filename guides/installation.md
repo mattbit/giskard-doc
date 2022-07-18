@@ -48,7 +48,7 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
 If you need specific Python libraries that are not pre-installed in Giskard and that are available in PyPI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
 
 1. Go to `giskard/giskard-ml-worker/ml-worker.dockerfile`
-2. Below the line `Add your python dependencies here, for example` , write the following line:&#x20;
+2. Below the line `Add your python dependencies here` , write the following line:&#x20;
 
 ```bash
 RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally, Github, PyPI, etc. See: https://python-poetry.org/docs/cli/#add etc
