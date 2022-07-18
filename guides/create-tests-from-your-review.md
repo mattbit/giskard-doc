@@ -1,6 +1,6 @@
 # Create model tests
 
-Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the 3 steps to execute \
+Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the 3 steps to create and execute tests: \
 
 
 ## 1. Create an automatic test suite
