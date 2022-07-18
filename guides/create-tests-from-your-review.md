@@ -1,9 +1,9 @@
 # Create model tests
 
-Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the two steps to execute \
+Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the 3 steps to execute \
 
 
-## Create an automatic test suite
+## 1. Create an automatic test suite
 
 To create tests, you need first to create a test suite, here are the 3 steps:
 
@@ -21,7 +21,7 @@ To create tests, you need first to create a test suite, here are the 3 steps:
 
 3\. Toggle on "the automatic test" to automatically pre-compute a batch of tests that is preloaded by Giskard according to your case.
 
-## Customize your tests inside your test suite
+## 2. Customize your tests inside your test suite
 
 Giskard proposes 5 families of tests that you can customize:
 
@@ -33,7 +33,7 @@ Giskard proposes 5 families of tests that you can customize:
 
 ![](<../.gitbook/assets/Screenshot 2022-07-18 at 10.29.32.png>)
 
-## Read the test results
+## 3. Read the test results
 
 Once you have run the test you designed, Giskard provides the results (PASS or FAIL) of all your tests. You can then click on the test and further investigate the outputs of the tests to understand the issue.
 
