@@ -1,4 +1,8 @@
-# Review your model
+---
+description: How to evaluate and get collaborative feedback on your Machine Learning model
+---
+
+# Review your ML model
 
 {% hint style="info" %}
 To review your model, you can either
