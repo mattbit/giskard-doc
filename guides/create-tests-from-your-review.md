@@ -1,3 +1,7 @@
+---
+description: How to get started with Automated Machine Learning testing
+---
+
 # Create model tests
 
 Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the 3 steps to create and execute tests: \
