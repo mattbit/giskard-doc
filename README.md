@@ -1,4 +1,12 @@
+---
+description: >-
+  Giskard overview: from installation to collaborative Machine Learning model
+  evaluation and testing
+---
+
 # Get started
+
+
 
 ![](<.gitbook/assets/Screenshot 2022-06-01 at 10.15.28 (1).png>)
 
@@ -13,7 +21,7 @@
 
 {% embed url="https://discord.gg/ABvfpbu69R" %}
 
-## Installation
+## Setup
 
 ```batch
 git clone https://github.com/Giskard-AI/giskard.git
@@ -21,25 +29,39 @@ cd giskard
 docker-compose up -d
 ```
 
-Yes, that's all!  Then start inspecting some models at [**http://localhost:19000/**](http://localhost:19000/)****
+Yes, that's all!  Then start inspecting & testing your ML models at [**http://localhost:19000/**](http://localhost:19000/)****
 
 {% hint style="info" %}
 **login**: admin  **password**: admin
 {% endhint %}
 
-## Example
+For more details, refer to the guides below:
 
-### 1. Collect feedback on your model
+{% content-ref url="guides/installation.md" %}
+[installation.md](guides/installation.md)
+{% endcontent-ref %}
 
-![](<.gitbook/assets/Give feedbcack.jpg>)
+{% content-ref url="guides/configuration.md" %}
+[configuration.md](guides/configuration.md)
+{% endcontent-ref %}
+
+{% content-ref url="guides/upload-your-model.md" %}
+[upload-your-model.md](guides/upload-your-model.md)
+{% endcontent-ref %}
+
+## Workflow
+
+### 1. Validate your ML model by collecting feedback
+
+![AI Inspect Session](<.gitbook/assets/Give feedbcack.jpg>)
 
 ### 2. Discuss and analyze feedback
 
-![](<.gitbook/assets/Screenshot 2022-03-08 at 10.00.08.png>)
+![Feedback on ML model](<.gitbook/assets/Screenshot 2022-03-08 at 10.00.08.png>)
 
 ### 3. Turn feedback into tests
 
-![](.gitbook/assets/Test.jpg)
+![Automated ML Testing with Giskard](<.gitbook/assets/Screenshot 2022-07-18 at 10.29.32.png>)
 
 ## Guides: Jump right in
 
