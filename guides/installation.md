@@ -1,4 +1,10 @@
-# Installation
+---
+description: >-
+  How to install Giskard on your machine, set up your Python backend and upgrade
+  Giskard
+---
+
+# Installation & upgrade
 
 {% hint style="info" %}
 ## Requirements
@@ -18,19 +24,17 @@ cd giskard
 docker-compose up -d --force-recreate
 ```
 
-once the docker-compose starts all of the modules you'll be able to open Giskard at
-
-{% hint style="info" %}
-[**http://localhost:19000/**](http://localhost:19000/)****
+{% hint style="warning" %}
+If you have an error because of the rate limit (`toomanyrequests: Rate exceeded`), please re-execute the docker-compose command line once again.
 {% endhint %}
 
-The default credentials are
+Once the docker-compose starts all the modules, you'll be able to open Giskard at [http://localhost:19000/](http://localhost:19000/)
 
-{% hint style="info" %}
-Login: **`admin`**
-
-Password: **`admin`**
+{% hint style="warning" %}
+Since the backend container may take some minutes to load, please wait a bit and refresh the webpage [http://localhost:19000/](http://localhost:19000/)
 {% endhint %}
+
+To login, the default credentials are **Login: admin / Password: admin**
 
 You're all set to try Giskard in action, upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
 
@@ -42,6 +46,13 @@ In order to upgrade Giskard to the latest version, please run the following in y
 git pull
 docker-compose down && docker-compose pull && docker-compose up -d --force-recreate
 ```
+
+{% hint style="danger" %}
+* If you have an error because of the rate limit (`toomanyrequests: Rate exceeded`), please re-execute the docker-compose command line once again.
+* if you installed in Giskard additional Python libraires or a new Python version, you will need to reinstall them. Please refer to
+  * [#install-additional-python-libraries](installation.md#install-additional-python-libraries "mention")
+  * [#install-a-new-python-version](installation.md#install-a-new-python-version "mention")
+{% endhint %}
 
 ## Install additional Python libraries
 
