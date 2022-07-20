@@ -1,7 +1,3 @@
----
-description: How to upload your data and Machine Learning model to Giskard using Python
----
-
 # Upload your data & model
 
 ## Prerequisites
