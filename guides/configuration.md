@@ -1,7 +1,3 @@
----
-description: 'How to configure your Giskard application: email notifications and API tokens'
----
-
 # Configuration
 
 ## Email notifications
