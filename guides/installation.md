@@ -1,4 +1,10 @@
-# Installation
+---
+description: >-
+  How to install Giskard on your machine, set up your Python backend and upgrade
+  Giskard
+---
+
+# Installation & upgrade
 
 {% hint style="info" %}
 ## Requirements

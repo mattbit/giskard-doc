@@ -1,12 +1,4 @@
----
-description: >-
-  Giskard overview: from installation to collaborative Machine Learning model
-  evaluation and testing
----
-
 # Get started
-
-
 
 ![](<.gitbook/assets/Screenshot 2022-06-01 at 10.15.28 (1).png>)
 

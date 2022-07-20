@@ -4,7 +4,7 @@
 
 ## Guides
 
-* [Installation](guides/installation.md)
+* [Installation & upgrade](guides/installation.md)
 * [Configuration](guides/configuration.md)
 * [Upload your data & model](guides/upload-your-model.md)
 * [Review your model](guides/review-your-model.md)
