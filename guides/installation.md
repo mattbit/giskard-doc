@@ -36,7 +36,7 @@ Since the backend container may take some minutes to load, please wait a bit and
 
 To login, the default credentials are **Login: admin / Password: admin**
 
-You're all set to try Giskard in action, upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
+You're all set to try Giskard in action. Upload your first model by following the [upload-your-model.md](upload-your-model.md "mention") tutorial.
 
 ## Upgrade Giskard to the latest version
 
@@ -49,9 +49,11 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
 
 {% hint style="danger" %}
 * If you have an error because of the rate limit (`toomanyrequests: Rate exceeded`), please re-execute the docker-compose command line once again.
-* if you installed in Giskard additional Python libraires or a new Python version, you will need to reinstall them. Please refer to
-  * [#install-additional-python-libraries](installation.md#install-additional-python-libraries "mention")
-  * [#install-a-new-python-version](installation.md#install-a-new-python-version "mention")
+*   If you installed in Giskard additional Python libraries or a new Python version, you will need to reinstall them. Please refer to
+
+    [#install-additional-python-libraries](installation.md#install-additional-python-libraries "mention")
+
+    [#install-a-new-python-version](installation.md#install-a-new-python-version "mention")
 {% endhint %}
 
 ## Install additional Python libraries
