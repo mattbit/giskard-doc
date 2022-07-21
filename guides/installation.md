@@ -9,7 +9,7 @@ description: >-
 {% hint style="info" %}
 ## Requirements
 
-To install Giskard, you need
+To install Giskard, you need a **Linux** or **macOS** machine with:
 
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
 * `docker (`[`download`](https://docs.docker.com/get-docker/)`)`
