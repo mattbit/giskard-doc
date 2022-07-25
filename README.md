@@ -85,4 +85,4 @@ Follow our handy guides to get started on the basics as quickly as possible:
 
 ## License
 
-This project is licensed under the terms of the `Apache Software License 2.0` license. See [LICENSE](https://github.com/Giskard-AI/ai-inspector/blob/main/LICENSE) for more details.
+This project is licensed under the terms of the `Apache Software License 2.0` license. See [LICENSE](https://github.com/Giskard-AI/giskard/blob/main/LICENSE) for more details.
