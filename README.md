@@ -79,8 +79,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [review-your-model.md](guides/review-your-model.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/create-tests-from-your-review/" %}
-[create-tests-from-your-review](guides/create-tests-from-your-review/)
+{% content-ref url="guides/create-tests-from-your-review.md" %}
+[create-tests-from-your-review.md](guides/create-tests-from-your-review.md)
 {% endcontent-ref %}
 
 ## License
