@@ -5,6 +5,7 @@
 ## Guides
 
 * [Installation & upgrade](guides/installation.md)
+* [Installation in AWS](guides/installation-in-aws.md)
 * [Configuration](guides/configuration.md)
 * [Upload your ML model & data](guides/upload-your-model.md)
 * [Validate your ML model](guides/review-your-model.md)
