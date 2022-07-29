@@ -37,8 +37,8 @@ Yes, that's all!  Then start inspecting & testing your ML models at [**http://lo
 
 For more details, refer to the guides below:
 
-{% content-ref url="guides/installation.md" %}
-[installation.md](guides/installation.md)
+{% content-ref url="guides/installation/" %}
+[installation](guides/installation/)
 {% endcontent-ref %}
 
 {% content-ref url="guides/configuration.md" %}
@@ -67,8 +67,8 @@ For more details, refer to the guides below:
 
 Follow our handy guides to get started on the basics as quickly as possible:
 
-{% content-ref url="guides/installation.md" %}
-[installation.md](guides/installation.md)
+{% content-ref url="guides/installation/" %}
+[installation](guides/installation/)
 {% endcontent-ref %}
 
 {% content-ref url="guides/upload-your-model.md" %}

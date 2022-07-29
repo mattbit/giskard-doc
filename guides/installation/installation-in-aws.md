@@ -22,7 +22,7 @@ You can easily install Giskard in AWS using our AMI. To do that, you can follow 
 * Go to **`http://<your IP address>`**` ``` in your browser
 * The user id is `admin` and the password is `admin`
 
-That's it, you are now ready to use Giskard in AWS! Now you can start [uploading a model](upload-your-model.md)!
+That's it, you are now ready to use Giskard in AWS! Now you can start [uploading a model](../upload-your-model.md)!
 
 {% hint style="warning" %}
 If you have an error message when you log in, you may need to wait one or two minutes for Giskard backend to start!
