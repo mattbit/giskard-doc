@@ -12,14 +12,14 @@ You can easily install Giskard in AWS using our AMI. To do that, you can follow 
 * **Image selection**: In the search bar for AMI, type "Giskard" and select either `giskard-latest` or the specific Giskard version you want
 * **Instance type**: We recommend you to choose `t2.large` instance type
 * **Key pair**: Choose your usual key pair. If you don't have one, go to the [Amazon document](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html) to create the right one
-* **Network settings**: Make sure to tick HTTPS and HTTP to be able to access the application. And SSH too if you need to access the machine.
+* **Network settings**: Make sure to tick HTTP to be able to access the application. And SSH too if you need to access the machine.
 * **Storage**: Choose a minimum of 30 Gigs of SSD (this will mainly depend on the size of your databases)
 
 ### 3. Launch instance and open Giskard
 
 * **Launch instance**: Click on Launch instance to create the instance
 * **Get your IP address**: Click in the ID of the instance you just created and copy its IP address
-* Go to **`http://<your IP address>`**` ``` in your browser
+* Go to **`http://<your IP address>`** in your browser
 * The user id is `admin` and the password is `admin`
 
 That's it, you are now ready to use Giskard in AWS! Now you can start [uploading a model](../upload-your-model.md)!
