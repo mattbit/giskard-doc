@@ -1,6 +1,8 @@
-# Installation in AWS
+---
+description: Easily install Giskard in AWS using our AMI, in 3 steps
+---
 
-You can easily install Giskard in AWS using our AMI. To do that, you can follow these 3 steps:
+# Installation in AWS
 
 ### 1. Initialize EC2 instance
 
