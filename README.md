@@ -1,7 +1,5 @@
 ---
-description: >-
-  Giskard overview: from installation to collaborative Machine Learning model
-  evaluation and testing
+description: From Giskard installation to collaborative ML evaluation and testing
 ---
 
 # Get started
