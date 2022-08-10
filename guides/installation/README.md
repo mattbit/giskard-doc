@@ -58,6 +58,11 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
     [#install-a-new-python-version](./#install-a-new-python-version "mention")
 {% endhint %}
 
+{% hint style="info" %}
+Browser may keep using an old version of Giskard UI due to caching. If there are issues after running an upgrade try hard refreshing Giskard page by pressing\
+`Ctrl + Shift + R` or  `Command + Shift + R`&#x20;
+{% endhint %}
+
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
 
 If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;
