@@ -4,8 +4,14 @@ description: How to get started with Automated Machine Learning testing
 
 # Test your ML model
 
-Giskard enables you to create test suites on AI models. It provides presets of tests so that you design and execute your tests in no time. Here are the 3 steps to create and execute tests: \
+Giskard enables you to create test suites on AI models. It provides **presets** of tests so that you design and execute your tests in no time.&#x20;
 
+Here are the 3 steps to create and execute tests: \
+
+
+{% hint style="info" %}
+If you have **custom tests**, go to the [Create your custom test](create-your-custom-test.md) section
+{% endhint %}
 
 ## 1. Create an automatic test suite
 
@@ -39,6 +45,10 @@ Giskard proposes 5 families of tests that you can customize (see [documentation]
 
 {% hint style="info" %}
 To have detailed **documentation** on these tests, go to [https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test](https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test)
+{% endhint %}
+
+{% hint style="info" %}
+If you have **custom tests**, go to the [Create your custom test](create-your-custom-test.md) section
 {% endhint %}
 
 ## 3. Read the test results
