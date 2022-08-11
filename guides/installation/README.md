@@ -50,17 +50,13 @@ docker-compose down && docker-compose pull && docker-compose up -d --force-recre
 ```
 
 {% hint style="danger" %}
-* If you have an error because of the rate limit (`toomanyrequests: Rate exceeded`), please re-execute the docker-compose command line once again.
-*   If you installed in Giskard additional Python libraries or a new Python version, you will need to reinstall them. Please refer to
+* The browser may keep using an old version of Giskard UI due to caching. If there are issues after running an upgrade try to **hard refresh** Giskard page by pressing\
+  `Ctrl + Shift + R` or  `Command + Shift + R`&#x20;
+*   If you installed in Giskard additional **Python libraries** or a **new Python version**, you will need to reinstall them. Please refer to
 
     [#install-additional-python-libraries](./#install-additional-python-libraries "mention")
 
     [#install-a-new-python-version](./#install-a-new-python-version "mention")
-{% endhint %}
-
-{% hint style="info" %}
-Browser may keep using an old version of Giskard UI due to caching. If there are issues after running an upgrade try hard refreshing Giskard page by pressing\
-`Ctrl + Shift + R` or  `Command + Shift + R`&#x20;
 {% endhint %}
 
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
