@@ -2,7 +2,7 @@
 description: How to evaluate and get collaborative feedback on your Machine Learning model
 ---
 
-# Validate your ML model
+# Evaluate your ML model
 
 {% hint style="info" %}
 To review your model, you can either
@@ -14,7 +14,7 @@ To review your model, you can either
 
 ## Choose a model and a dataset to inspect
 
-After [uploading your model](upload-your-model.md), you can inspect it by:
+After [uploading your model](upload-your-model/), you can inspect it by:
 
 * Clicking on the Models tab
 * Selecting the model version that you want to inspect by clicking on the Inspect button

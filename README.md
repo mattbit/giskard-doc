@@ -43,8 +43,8 @@ For more details, refer to the guides below:
 [configuration.md](guides/configuration.md)
 {% endcontent-ref %}
 
-{% content-ref url="guides/upload-your-model.md" %}
-[upload-your-model.md](guides/upload-your-model.md)
+{% content-ref url="guides/upload-your-model/" %}
+[upload-your-model](guides/upload-your-model/)
 {% endcontent-ref %}
 
 ## Workflow
@@ -69,8 +69,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [installation](guides/installation/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/upload-your-model.md" %}
-[upload-your-model.md](guides/upload-your-model.md)
+{% content-ref url="guides/upload-your-model/" %}
+[upload-your-model](guides/upload-your-model/)
 {% endcontent-ref %}
 
 {% content-ref url="guides/review-your-model.md" %}

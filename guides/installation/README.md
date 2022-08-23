@@ -38,7 +38,7 @@ Since the backend container may take some minutes to load, please wait a bit and
 
 To login, the default credentials are **Login: admin / Password: admin**
 
-You're all set to try Giskard in action. Upload your first model by following the [upload-your-model.md](../upload-your-model.md "mention") tutorial.
+You're all set to try Giskard in action. Upload your first model by following the [upload-your-model](../upload-your-model/ "mention") tutorial.
 
 ## Upgrade Giskard to the latest version
 

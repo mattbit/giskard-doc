@@ -10,7 +10,7 @@ To upload the model you want to inspect, you need:
 
 * A model. For example, a _scikit-learn, Tensorflow, HuggingFace, catboost, PyTorch, ... P_ython functions
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
-* The Giskard's platform. To install it, check [installation](installation/ "mention")
+* The Giskard's platform. To install it, check [installation](../installation/ "mention")
 
 ## Steps to upload your data & model
 
@@ -105,10 +105,10 @@ credit_scoring.upload_model_and_df(
 **Example notebooks:**
 
 * You can download an **example notebook** [here](https://github.com/Giskard-AI/giskard/tree/main/giskard-demo-notebook/notebook) to execute it in your working environment
-* To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation](installation/ "mention")). Feel free to modify it to adapt it to your case! &#x20;
+* To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation](../installation/ "mention")). Feel free to modify it to adapt it to your case! &#x20;
 {% endhint %}
 
-Now you uploaded your model, let's [review-your-model.md](review-your-model.md "mention")
+Now you uploaded your model, let's [review-your-model.md](../review-your-model.md "mention")
 
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
 
