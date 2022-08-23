@@ -16,7 +16,7 @@ The **easiest way is to use an ML Pipeline** as your `predict_proba` function (s
 * We want to detect errors that require **domain knowledge**: we use human-readable datasets to inspect & test ML models
 {% endhint %}
 
-### Wrap manually a prediction function _<mark style="background-color:orange;">**without**</mark>_ a pipeline
+### Wrap manually a prediction function <mark style="background-color:orange;">without</mark> a pipeline
 
 Here is an [example](https://colab.research.google.com/drive/1K6L9IOryfphNzK4hPi1BX1Qv7GC2o3uk#scrollTo=JW9crRujO7H\_) that illustrates how to upload a `prediction_function` that wraps multiple feature\_engineering steps for the Iris data:
 
