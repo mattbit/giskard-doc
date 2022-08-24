@@ -62,7 +62,7 @@ iris.upload_model_and_df(
 )
 ```
 
-To execute the whole **notebook** with the training step, use the following notebook in Colab:
+To execute the whole **notebook** for the above example, use the following notebook in Colab:
 
 {% embed url="https://colab.research.google.com/drive/1K6L9IOryfphNzK4hPi1BX1Qv7GC2o3uk#scrollTo=JW9crRujO7H_" %}
 
@@ -119,6 +119,6 @@ enron.upload_model_and_df(
 )
 ```
 
-To execute the whole **notebook** with the training step, use the following [notebook](https://github.com/Giskard-AI/giskard/blob/main/giskard-demo-notebook/notebook/Email%20Classification%20Model.ipynb):
+To execute the whole **notebook** for the above example, use the following [notebook](https://github.com/Giskard-AI/giskard/blob/main/giskard-demo-notebook/notebook/Email%20Classification%20Model.ipynb):
 
 {% embed url="https://github.com/Giskard-AI/giskard/blob/main/giskard-demo-notebook/notebook/Email%20Classification%20Model.ipynb" %}
