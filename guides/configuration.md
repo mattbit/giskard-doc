@@ -38,7 +38,7 @@ Giskard application is working on Python 3.7, if you use another Python version 
 
 ```bash
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker-compose down ml-worker && docker-compose up ml-worker -d
+docker-compose stop ml-worker && docker-compose up ml-worker -d
 ```
 
 ## Email notifications
