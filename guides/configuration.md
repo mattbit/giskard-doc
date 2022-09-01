@@ -20,9 +20,8 @@ RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally,
 &#x20; 3\. From the root of the Giskard directory run
 
 ```bash
-docker-compose stop ml-worker
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker-compose up ml-worker -d
+docker-compose stop ml-worker && docker-compose up ml-worker -d
 ```
 
 ## Install a new Python version
