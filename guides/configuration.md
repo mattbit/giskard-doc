@@ -8,16 +8,25 @@ description: >-
 
 ## Install additional Python libraries
 
-If you need specific Python libraries that are not pre-installed in Giskard and that are available in PyPI, git, locally etc., you can install them manually in Giskard. To do so, execute the following commands:
+If you need specific Python libraries that are not pre-installed in Giskard and that are available in PyPI, git, locally etc., you can install them manually in Giskard.&#x20;
 
-1. Go to `giskard/giskard-ml-worker/ml-worker.dockerfile`
-2. Below the line `Add your python dependencies here` , write the following line:&#x20;
+To do so, please follow these steps:
 
-```bash
-RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally, Github, PyPI, etc. See: https://python-poetry.org/docs/cli/#add etc
-```
+1.  Change the file `giskard/giskard-ml-worker/ml-worker.dockerfile`. To do that, here are the steps:
 
-&#x20; 3\. From the root of the Giskard directory run
+    1. &#x20;From your Giskard repo, type `vim giskard-ml-worker/ml-worker.dockerfile`
+    2. Below the line `Add your python dependencies here`, write the following line:  (press `i` to edit in the _vim_ text editor).
+
+
+
+    ```bash
+    RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally, Github, PyPI, etc. See: https://python-poetry.org/docs/cli/#add etc
+    ```
+
+
+
+    3\. Save and quit the text editor (`:wq` in the _vim_ editor)
+2. Then rebuild your docker images using the following command lines
 
 ```bash
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
