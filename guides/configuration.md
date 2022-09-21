@@ -32,7 +32,7 @@ RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally,
 
 ```bash
 docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker-compose stop ml-worker && docker-compose up ml-worker -d
+docker-compose stop ml-worker && docker-compose up -d ml-worker
 ```
 
 ## Install a new Python version
