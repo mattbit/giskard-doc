@@ -8,6 +8,7 @@ description: How to add your custom ML tests to Giskard's open-source project
 
 * Clone the Giskard repository
 * Create a GitHub branch with the base as main, starting with `test-contribution/name-of-your-branch`
+* From the root of the cloned repo run `./gradlew generateProto`. This will generate the module`generated` that you will need to create your tests.
 * Write your test inside one of the classes (`MetamorphicTests`, `HeuristicTests`, `PerformanceTests` or `DriftTests`) inside this [repo](https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/ml\_worker/testing). If your test does not fit these classes, you can also create a custom class in a new file.
 * We recommend writing unit tests for your test functions: this is the way you can execute and debug your test! Unit tests should be placed in [this directory](https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test).
 
