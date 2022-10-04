@@ -108,7 +108,7 @@ credit_scoring.upload_model_and_df(
 {% hint style="info" %}
 **Example notebooks:**
 
-* You can download an **example notebook** [here](https://github.com/Giskard-AI/giskard/tree/main/giskard-demo-notebook/notebook) to execute it in your working environment
+* You can download an **example notebook** [here](https://github.com/Giskard-AI/demo-notebooks) to execute it in your working environment
 * To get started with Giskard as fast as possible we've included a demo python notebook in the platform with all the requirements on [**http://localhost:19000/jupyter**](http://localhost:19000/jupyter) **** (accessible after the [installation](../installation/ "mention")). Feel free to modify it to adapt it to your case! &#x20;
 {% endhint %}
 
