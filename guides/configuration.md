@@ -31,8 +31,8 @@ RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally,
 2\. Then rebuild your docker images using the following command lines
 
 ```bash
-docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker-compose stop ml-worker && docker-compose up -d ml-worker
+docker compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
+docker compose stop ml-worker && docker compose up -d ml-worker
 ```
 
 ## Install a new Python version
@@ -53,8 +53,8 @@ vim giskard-ml-worker/ml-worker.dockerfile
 2\. Then rebuild your docker images using the following command lines
 
 ```bash
-docker-compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker-compose stop ml-worker && docker-compose up -d ml-worker
+docker compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
+docker compose stop ml-worker && docker compose up -d ml-worker
 ```
 
 ## Email notifications

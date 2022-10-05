@@ -24,19 +24,20 @@ To install Giskard, you need a **Linux** or **macOS** machine with:
 **Cloud installation:**
 
 * To install Giskard in **AWS**, please go to __ [installation-in-aws.md](installation-in-aws.md "mention")__
-* To install Giskard in **GCP**, please go to&#x20;
+* To install Giskard in **GCP**, please go to [installation-in-gcp.md](installation-in-gcp.md "mention")
 {% endhint %}
 
-Run the following commands to install Giskard in your server
+Run the following commands to install Giskard on your server
 
 ```shell
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-docker-compose up -d --force-recreate
+docker compose up -d --force-recreate
 ```
 
 {% hint style="warning" %}
-If you have an error because of the rate limit (`toomanyrequests: Rate exceeded`), please re-execute the docker-compose command line once again.
+* If you have an error because of the rate limit (**`toomanyrequests: Rate exceeded`**), please re-execute the docker-compose command line once again.
+* If you have an older version of docker, you'll need to install and **`docker-compose`** instead of `docker compose`
 {% endhint %}
 
 Once the docker-compose starts all the modules, you'll be able to open Giskard at [http://localhost:19000/](http://localhost:19000/)
@@ -55,7 +56,7 @@ In order to upgrade Giskard to the latest version, please run the following in y
 
 ```shell
 git pull
-docker-compose down && docker-compose pull && docker-compose up -d --force-recreate
+docker compose down && docker compose pull && docker compose up -d --force-recreate
 ```
 
 {% hint style="danger" %}
