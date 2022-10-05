@@ -12,10 +12,19 @@ description: >-
 To install Giskard, you need a **Linux** or **macOS** machine with:
 
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
-* `docker (`[`download`](https://docs.docker.com/get-docker/)`)`
-* `docker`-`compose (`[`download`](https://docs.docker.com/compose/install/)`)`
+*   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).` For an easy installation of Docker you can use:&#x20;
 
-To install Giskard in AWS, please go to __ [installation-in-aws.md](installation-in-aws.md "mention")__
+    ```bash
+     curl -fsSL https://get.docker.com -o get-docker.sh
+     sudo sh get-docker.sh
+    ```
+{% endhint %}
+
+{% hint style="success" %}
+**Cloud installation:**
+
+* To install Giskard in **AWS**, please go to __ [installation-in-aws.md](installation-in-aws.md "mention")__
+* To install Giskard in **GCP**, please go to&#x20;
 {% endhint %}
 
 Run the following commands to install Giskard in your server

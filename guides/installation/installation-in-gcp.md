@@ -22,4 +22,4 @@ gcloud compute firewall-rules create rule_name --allow tcp:port --source-tags=ru
    1. In the firewall section, allow http and https traffic
    2. In advanced options, go to networking and add the giskard tag
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (2).png>)
