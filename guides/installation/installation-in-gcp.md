@@ -4,22 +4,75 @@ description: Easily install Giskard in GCP
 
 # Installation in GCP
 
-1. Create a project. You can follow the instructions [here](https://cloud.google.com/resource-manager/docs/creating-managing-projects?utm\_source=codelabs\&utm\_medium=et\&utm\_campaign=CDR\_sar\_aiml\_vertexio\_\&utm\_content=-) to create a project in GCP
-2. Create the firewall rule:
-   1. Go to VPC network
-   2. Click “setup firewall rules” on the bottom of the page, and check if the rule does not already exist. If the rule already exists, skip steps 3 and 4 and go to the next section.
-3. Start your VM (or notebook), and open a terminal,
-4. create the firewall rule with the following command: ​
+Installing Giskard in GCP enables you to inspect & test models that you created in the GCP environment (Workbench, etc.). Here are the 3 steps to install Giskard in a new VM instance:
 
-```jsx
-gcloud compute firewall-rules create rule_name --allow tcp:port --source-tags=rule_tag
+### 1. Create a Giskard VM Instance in GCP
+
+1. Go to VM instances in Compute Engine and create a VM instance
+2. In the configuration of your VM :
+   1. We recommend you choose at least an `e2-standard-2` (2vCPU, 8GB memory)
+   2. Choose `Allow full access to all Cloud APIs`
+   3. In the firewall section, allow **HTTP** and **HTTPS** traffic
+3. Connect to your VM in SSH by opening a browser window
+4. Create a firewall rule to open the `19000` secured port of the Giskard instance. Here is the command line process that you can execute in the terminal opened by your SSH connection:
+
+```bash
+gcloud compute firewall-rules create giskard-rule --allow tcp:19000
 ```
 
-​ for instance, you can create the tensorboard rule, named `tensorboard`, and applied to the tag `tensorboard`, which forwards the TCP port through the port 8008: ​ `gcloud compute firewall-rules create tensorboard —allow tcp:19000 —source-tags=tensorboard`
+{% hint style="info" %}
+Make sure you have the **proper rights** to open a port. If not contact your GCP administrator. Remember that the port `19000` of Giskard is **secured** by asking for proper authentification. Your data and model are in a safe place!
+{% endhint %}
 
-1. Go to VM instances in Compute Engine and create a VM instances
-2. In the configuration of your VM :
-   1. In the firewall section, allow http and https traffic
-   2. In advanced options, go to networking and add the giskard tag
+{% hint style="info" %}
+Creating the firewall rules can also be done **through UI** in the `VPC Network`section:
 
-![](<../../.gitbook/assets/image (1).png>)
+* Go to the `firewall` in `VPC Network` section of GCP
+* Click on `create a firewall rule`
+* In `Targets`, select `All instances in the network`
+* In `Source filter`, choose `IPv4 ranges`
+* In `source IPv4 ranges,` select `0.0.0.0/0`
+* In `Protocols and ports`, select `Specified protocols and ports`
+* Then select `TCP`, and type `19000`
+{% endhint %}
+
+### 2. Install Giskard in the GCP VM
+
+* Installation of the Giskard requirements (`git` and `docker`)
+
+```bash
+ sudo apt install git
+ curl -fsSL https://get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
+```
+
+* Installation of Giskard
+
+```bash
+git clone https://github.com/Giskard-AI/giskard.git
+cd giskard
+sudo docker compose up -d --force-recreate
+```
+
+### 3. Connect to your instance and start uploading ML model
+
+* Get the external IP address of your Giskard VM in the `VM instances` section of the `Compute Engine`
+* Go to **`http://<your IP address>:19000`** in your web browser
+
+{% hint style="info" %}
+You can stop the instance and restart it when you need to save your GCP compute costs. However, note that&#x20;
+
+* the **IP address will not necessarily be the same**. So make sure you copy it again when it's launched.
+* you will need to re-execute in the Giskard repo:
+
+&#x20;`sudo docker compose up -d --force-recreate`
+{% endhint %}
+
+* The user id is `admin` and the password is `admin`
+
+{% hint style="warning" %}
+If you have an error message when you log in, you may need to wait one or two minutes for the Giskard backend to start!
+{% endhint %}
+
+That's it, you are now ready to use Giskard in GCP! Now you can start [uploading a model](../upload-your-model/)! To do that in GCP, you can use a workbench instance, for example!
+

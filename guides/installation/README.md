@@ -6,25 +6,25 @@ description: >-
 
 # Installation & upgrade
 
+{% hint style="success" %}
+**Cloud installation:**
+
+* To install Giskard in **AWS**, please go to __ [installation-in-aws.md](installation-in-aws.md "mention")__
+* To install Giskard in **GCP**, please go to [installation-in-gcp.md](installation-in-gcp.md "mention")
+{% endhint %}
+
 {% hint style="info" %}
 ## Requirements
 
 To install Giskard, you need a **Linux** or **macOS** machine with:
 
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
-*   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).` For an easy installation of Docker you can use:&#x20;
+*   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).`For an easy installation of Docker you can execute:&#x20;
 
     ```bash
      curl -fsSL https://get.docker.com -o get-docker.sh
      sudo sh get-docker.sh
     ```
-{% endhint %}
-
-{% hint style="success" %}
-**Cloud installation:**
-
-* To install Giskard in **AWS**, please go to __ [installation-in-aws.md](installation-in-aws.md "mention")__
-* To install Giskard in **GCP**, please go to [installation-in-gcp.md](installation-in-gcp.md "mention")
 {% endhint %}
 
 Run the following commands to install Giskard on your server
@@ -37,7 +37,7 @@ docker compose up -d --force-recreate
 
 {% hint style="warning" %}
 * If you have an error because of the rate limit (**`toomanyrequests: Rate exceeded`**), please re-execute the docker-compose command line once again.
-* If you have an older version of docker, you'll need to install and **`docker-compose`** instead of `docker compose`
+* If you have an older version of docker, you'll need to use**`docker-compose`** instead of `docker compose`
 {% endhint %}
 
 Once the docker-compose starts all the modules, you'll be able to open Giskard at [http://localhost:19000/](http://localhost:19000/)

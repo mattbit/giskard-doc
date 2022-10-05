@@ -12,7 +12,7 @@ description: Easily install Giskard in AWS using our AMI, in 3 steps
 ### 2. Configure your EC2 instance
 
 * **Image selection**: In the search bar for AMI, type "Giskard" and select either `giskard-latest` or the specific Giskard version you want
-* **Instance type**: We recommend you to choose `t2.large` instance type
+* **Instance type**: We recommend you to choose at least a `t2.large` instance type (2vCPU, 8GB memory)
 * **Key pair**: Choose your usual key pair. If you don't have one, go to the [Amazon document](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html) to create the right one
 * **Network settings**: Make sure to tick HTTP to be able to access the application. And SSH too if you need to access the machine.
 * **Storage**: Choose a minimum of 30 Gigs of SSD (this will mainly depend on the size of your datasets)
@@ -31,6 +31,6 @@ If you have an error message when you log in, you may need to wait one or two mi
 {% endhint %}
 
 {% hint style="info" %}
-You can stop the instance and restart it when you need to save your AWS compute costs. However, note that the **IP address will not necessarily be the same**. So make sure you copy it again from the instance configuration page when it's launched.
+You can stop the instance and restart it when you need to save your AWS compute costs. However, note that the **IP address will not necessarily be the same**. So make sure you copy it again when it's launched
 {% endhint %}
 
