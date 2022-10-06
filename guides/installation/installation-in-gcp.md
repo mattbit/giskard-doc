@@ -4,7 +4,7 @@ description: Easily install Giskard in GCP
 
 # Installation in GCP
 
-Installing Giskard in GCP enables you to inspect & test models that you created in the GCP environment (Workbench, etc.). Here are the 3 steps to install Giskard in a new VM instance:
+Installing Giskard in GCP enables you to inspect & test models that you created in the GCP environment (Workbench, Vertex AI, etc.). Here are the 3 steps to install Giskard in a new VM instance in GCP:
 
 ### 1. Create a Giskard VM Instance in GCP
 
@@ -14,7 +14,7 @@ Installing Giskard in GCP enables you to inspect & test models that you created 
    2. Choose `Allow full access to all Cloud APIs`
    3. In the firewall section, allow **HTTP** and **HTTPS** traffic
 3. Connect to your VM in SSH by opening a browser window
-4. Create a firewall rule to open the `19000` secured port of the Giskard instance. Here is the command line process that you can execute in the terminal opened by your SSH connection:
+4. Create a firewall rule to open the `19000` secured port of the Giskard instance. Here is the command line that you can execute in the terminal opened by your SSH connection:
 
 ```bash
 gcloud compute firewall-rules create giskard-rule --allow tcp:19000
@@ -63,7 +63,7 @@ sudo docker compose up -d --force-recreate
 You can stop the instance and restart it when you need to save your GCP compute costs. However, note that&#x20;
 
 * the **IP address will not necessarily be the same**. So make sure you copy it again when it's launched.
-* you will need to re-execute in the Giskard repo:
+* you will need to **re-run docker**, by executing in the Giskard folder:
 
 &#x20;`sudo docker compose up -d --force-recreate`
 {% endhint %}
@@ -74,5 +74,5 @@ You can stop the instance and restart it when you need to save your GCP compute 
 If you have an error message when you log in, you may need to wait one or two minutes for the Giskard backend to start!
 {% endhint %}
 
-That's it, you are now ready to use Giskard in GCP! Now you can start [uploading a model](../upload-your-model/)! To do that in GCP, you can use a workbench instance, for example!
+That's it, you are now ready to use Giskard in GCP! Now you can start [uploading a model](../upload-your-model/)! To do that in GCP, you can use a workbench notebook, for example! &#x20;
 
