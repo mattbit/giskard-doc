@@ -7,6 +7,7 @@
 * [Installation & upgrade](guides/installation/README.md)
   * [Installation in AWS](guides/installation/installation-in-aws.md)
   * [Installation in GCP](guides/installation/installation-in-gcp.md)
+  * [Execute your model in your environment](guides/installation/execute-your-model-in-your-environment.md)
 * [Configuration](guides/configuration.md)
 * [Upload your ML model & data](guides/upload-your-model/README.md)
   * [Wrap your prediction function](guides/upload-your-model/wrap-your-prediction-function.md)
