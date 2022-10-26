@@ -74,7 +74,7 @@ The proper and easiest way to upload a model in Giskard is to provide a model **
 To put your model to production, it's a common practice to turn all your data preprocessing, training, and inference steps into one unique pipeline. For example, see [here](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) how to do this with sklearn.
 {% endhint %}
 
-Here is an [example](https://github.com/Giskard-AI/giskard/blob/main/giskard-demo-notebook/notebook/Email%20Classification%20Model.ipynb) of a pipeline that computes feature engineering steps for numeric, category, and text variables at the same time!
+Here is an [example](https://github.com/Giskard-AI/giskard/blob/main/giskard-demo-notebook/notebook/Email%20Classification%20Model.ipynb) of a sklearn pipeline that computes feature engineering steps for numeric, category, and text variables at the same time!
 
 ```python
 feature_types = {i:column_types[i] for i in column_types if i!='Target'}
