@@ -44,7 +44,7 @@ Giskard proposes 5 families of tests that you can customize (see [documentation]
 ![](<../../.gitbook/assets/Screenshot 2022-07-18 at 10.29.32.png>)
 
 {% hint style="info" %}
-To have detailed **documentation** on these tests, go to [https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test](https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test)
+To have detailed **documentation** on these tests, go to [https://github.com/Giskard-AI/giskard-client/tree/main/giskard/ml\_worker/testing](https://github.com/Giskard-AI/giskard-client/tree/main/giskard/ml\_worker/testing)
 {% endhint %}
 
 {% hint style="info" %}
