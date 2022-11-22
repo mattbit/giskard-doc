@@ -33,16 +33,12 @@ and re-installing again
 
 `giskard worker start`
 
-If ML Worker manages to connect to Giskard instance, you should see the following message in the worker logs: **"Connected to Giskard server."**
+If ML Worker manages to connect to Giskard instance, you should see the following message in the worker logs: **"Connected to Giskard server."** By default, `giskard worker start` establishes a connection to the Giskard instance installed on `localhost:40041`.&#x20;
 
-{% hint style="info" %}
-By default, `giskard worker start` establishes a connection to the Giskard instance installed on `localhost:40041`. If Giskard **is not installed locally**, please specify the IP address (and a port in case a custom port is used). For example:
-
-`giskard worker start -h 192.158.1.38`
-{% endhint %}
+If Giskard **is not installed locally**, please specify the IP address (and a port in case a custom port is used). For example, `giskard worker start -h 192.158.1.38`
 
 {% hint style="warning" %}
-The default port on which Giskard server is listening for external ML Worker connections is **40051.** Make sure that this port is open on the Giskard server machine.
+The default port on which the Giskard server is listening for external ML Worker connections is **40051.** Make sure that this port is open on the Giskard server machine.
 {% endhint %}
 
 {% hint style="info" %}
