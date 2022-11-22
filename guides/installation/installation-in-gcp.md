@@ -14,14 +14,15 @@ Installing Giskard in GCP enables you to inspect & test models that you created 
    2. Choose `Allow full access to all Cloud APIs`
    3. In the firewall section, allow **HTTP** and **HTTPS** traffic
 3. Connect to your VM in SSH by opening a browser window
-4. Create a firewall rule to open the `19000` secured port of the Giskard instance. Here is the command line that you can execute in the terminal opened by your SSH connection:
+4. Create a firewall rule to open ports `19000` and `40051` port of the Giskard instance. Here is the command line that you can execute in the terminal opened by your SSH connection:
 
 ```bash
-gcloud compute firewall-rules create giskard-rule --allow tcp:19000
+gcloud compute firewall-rules create giskard-main --allow tcp:19000
+gcloud compute firewall-rules create giskard-worker --allow tcp:40051
 ```
 
 {% hint style="info" %}
-Make sure you have the **proper rights** to open a port. If not contact your GCP administrator. Remember that the port `19000` of Giskard is **secured** by asking for proper authentification. Your data and model are in a safe place!
+Make sure you have the **proper rights** to open a port. If not contact your GCP administrator.&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -34,6 +35,7 @@ Creating the firewall rules can also be done **through UI** in the `VPC Network`
 * In `source IPv4 ranges,` select `0.0.0.0/0`
 * In `Protocols and ports`, select `Specified protocols and ports`
 * Then select `TCP`, and type `19000`
+* `Repeat the same steps to open port 40051`
 {% endhint %}
 
 ### 2. Install Giskard in the GCP VM

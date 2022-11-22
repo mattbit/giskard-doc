@@ -5,6 +5,7 @@
 ## Guides
 
 * [Installation & upgrade](guides/installation/README.md)
+  * [ML Worker](guides/installation/ml-worker.md)
   * [Installation in AWS](guides/installation/installation-in-aws.md)
   * [Installation in GCP](guides/installation/installation-in-gcp.md)
 * [Configuration](guides/configuration.md)

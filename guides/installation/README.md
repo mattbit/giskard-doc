@@ -18,6 +18,7 @@ description: >-
 
 To install Giskard, you need a **Linux** or **macOS** machine with:
 
+* `By default Giskard uses 2 TCP ports: 19000 and 40051, make sure they're open on the machine where Giskard is installed`
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
 *   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).`For an easy installation of Docker you can execute:&#x20;
 
@@ -46,7 +47,7 @@ Once the docker-compose starts all the modules, you'll be able to open Giskard a
 Since the backend container may take some minutes to load, please wait a bit and refresh the webpage [http://localhost:19000/](http://localhost:19000/)
 {% endhint %}
 
-To login, the default credentials are **Login: admin / Password: admin**
+To log in, the default credentials are **Login: admin / Password: admin**
 
 You're all set to try Giskard in action. Upload your first model by following the [upload-your-model](../upload-your-model/ "mention") tutorial.
 
