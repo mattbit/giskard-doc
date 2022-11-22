@@ -18,7 +18,7 @@ If Giskard is installed **locally**, you cannot upload a model from **Google Col
 
 ## Steps to upload your data & model
 
-### 1. Install Giskard library
+### 1. Install the Giskard library
 
 In order to upload models and datasets to Giskard, you'll need to install the library giskard:
 
@@ -26,12 +26,35 @@ In order to upload models and datasets to Giskard, you'll need to install the li
 pip install giskard
 ```
 
-### 2. Create a new project or load an existing project
+{% hint style="warning" %}
+In case of **installation errors** related to `giskard` library, it's sometimes a good idea to remove it with:
+
+`pip uninstall giskard`
+
+and re-installing again
+{% endhint %}
+
+### 2. Start ML Worker
+
+[ML worker](../installation/ml-worker.md) is the component in Giskard that connect your Python environment to the Giskard server that you just installed. For more technical information, have a look at this [page](../installation/ml-worker.md). To start MLworker, execute the following command line:
+
+`giskard worker start -h [GISKARD IP ADDRESS]`
+
+If ML Worker manages to connect to the Giskard instance, you should see the following message in the worker logs: **"Connected to Giskard server."**&#x20;
+
+{% hint style="info" %}
+* If Giskard is installed **locally**, please only do: `giskard worker start.` That will establish a connection to the Giskard instance installed on localhost:40041. &#x20;
+* If Giskard **is not installed locally**, please specify the IP address (and a port in case a custom port is used). For example, `giskard worker start -h 192.158.1.38`
+
+For more information, see this [page](../installation/ml-worker.md).
+{% endhint %}
+
+### 3. Create a new project or load an existing project
 
 To create a new project or load an existing one, run the code below in your Python environment:
 
 ```python
-from giskard.giskard_client import GiskardClient
+from giskard import GiskardClient
 
 url = "http://localhost:19000" #if Giskard is installed locally (for installation, see: https://docs.giskard.ai/start/guides/installation) 
 token = "YOUR GENERATED TOKEN" #you can generate your API token in the Admin tab of the Giskard application (for installation, see: https://docs.giskard.ai/start/guides/installation) 
@@ -50,7 +73,7 @@ If you want to use an **existing project**, use `project=client.get_project("EXI
 For more details about the arguments of these functions, see our [Github repo](https://github.com/Giskard-AI/giskard-client/blob/main/giskard/project.py).
 {% endhint %}
 
-### 3. Upload a model and a dataset
+### 4. Upload a model and a dataset
 
 Apply the upload\_model\_and\_df to the project using the following arguments:
 
@@ -78,7 +101,10 @@ Make sure that `prediction_function`(`df`\[feature\_names]) gets executed **with
 ## Examples
 
 ```python
-from giskard.giskard_client import GiskardClient
+!pip install giskard
+!giskard worker start
+
+from giskard import GiskardClient
 
 client = GiskardClient(url, token)
 
