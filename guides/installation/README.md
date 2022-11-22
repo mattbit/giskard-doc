@@ -33,7 +33,7 @@ Run the following commands to install Giskard on your server
 ```shell
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-docker compose up -d --force-recreate
+docker compose up -d --force-recreate --no-build
 ```
 
 {% hint style="warning" %}
