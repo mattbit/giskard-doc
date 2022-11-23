@@ -14,4 +14,4 @@
 * [Test your ML model](guides/create-tests-from-your-review/README.md)
   * [Create your custom test](guides/create-tests-from-your-review/create-your-custom-test.md)
 * [Contribute to Giskard](guides/contribute-to-giskard.md)
-* [Configuration: email notification and API tokens](guides/configuration-email-notification-and-api-tokens.md)
+* [Configuration](guides/configuration.md)

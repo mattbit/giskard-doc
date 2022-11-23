@@ -2,7 +2,15 @@
 description: 'How to configure your Giskard application: Email notifications and API tokens'
 ---
 
-# Configuration: email notification and API tokens
+# Configuration
+
+## Change the LIME parameters
+
+To compute local explanations of textual features, Giskard uses the LIME algorithm. LIME creates `n_samples` of distorted texts to compute the explanation. When `n_samples` is high, the provided explanation is better, but the computation time will be higher as well.
+
+By default, n\_samples is equal to 500. To change it, you need to change the project settings. To do that, click on **Edit** in the top right corner of your screen (see the image below)
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Email notifications
 

@@ -24,11 +24,11 @@ And of course, Giskard works with any model, any environment and integrates seem
 
 ### 2. Discuss and analyse feedback
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Turn feedback into tests
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Write some custom tests</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Write some custom tests</p></figcaption></figure>
 
 ### 4. Check your test result
 
