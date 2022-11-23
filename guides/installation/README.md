@@ -57,7 +57,7 @@ In order to upgrade Giskard to the latest version, please run the following in y
 
 ```shell
 git pull
-docker compose down && docker compose pull && docker compose up -d --force-recreate
+docker compose down && docker compose pull && docker compose up -d --force-recreate --no-build
 ```
 
 {% hint style="danger" %}
