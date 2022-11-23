@@ -1,65 +1,42 @@
 ---
-description: From Giskard installation to collaborative ML evaluation and testing
+description: Open source & collaborative Quality testing for Machine Learning models
 ---
 
 # Get started
 
+**Giskard creates interfaces for humans to inspect & test AI models. It is open-source and self-hosted.**
 
+Giskard lets you instantly see your model's prediction for a given set of feature values. You can set the values directly in Giskard and see the prediction change.
 
-![](<.gitbook/assets/Screenshot 2022-06-01 at 10.15.28 (1).png>)
+Saw anything strange? Leave feedback directly within Giskard, so that your team can explore the query that generated the faulty result. Designed for both tech and business users, Giskard is super intuitive to use! 👌
 
-{% hint style="success" %}
-**Open-Source CI/CD platform for ML teams. Deliver ML products, better & faster.**&#x20;
-{% endhint %}
+Want to ensure your model is right? Giskard enables you to turn your business feedback into actionable tests. Create in a few clicks automatic tests and execute them in your CI/CD pipeline each time, you create a new version of your model. 🐢
 
-* **Collaborate faster** with **feedback** from business stakeholders.
-* **Deploy automated tests** to eliminate regressions, errors & biases.
+And of course, Giskard works with any model, any environment and integrates seemlessly with your favorite tools ⤵️
 
-{% embed url="https://github.com/Giskard-AI/giskard" %}
-
-{% embed url="https://discord.gg/ABvfpbu69R" %}
-
-## Setup
-
-```batch
-git clone https://github.com/Giskard-AI/giskard.git
-cd giskard
-docker-compose up -d
-```
-
-Yes, that's all!  Then start inspecting & testing your ML models at [**http://localhost:19000/**](http://localhost:19000/)****
-
-{% hint style="info" %}
-**login**: admin  **password**: admin
-{% endhint %}
-
-For more details, refer to the guides below:
-
-{% content-ref url="guides/installation/" %}
-[installation](guides/installation/)
-{% endcontent-ref %}
-
-{% content-ref url="guides/configuration.md" %}
-[configuration.md](guides/configuration.md)
-{% endcontent-ref %}
-
-{% content-ref url="guides/upload-your-model/" %}
-[upload-your-model](guides/upload-your-model/)
-{% endcontent-ref %}
+<figure><img src=".gitbook/assets/model agnostic.png" alt=""><figcaption></figcaption></figure>
 
 ## Workflow
 
 ### 1. Validate your ML model by collecting feedback
 
-![AI Inspect Session](<.gitbook/assets/Give feedbcack.jpg>)
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Collect feedback of your ML models</p></figcaption></figure>
 
-### 2. Discuss and analyze feedback
+### 2. Discuss and analyse feedback
 
-![Feedback on ML model](<.gitbook/assets/Screenshot 2022-03-08 at 10.00.08.png>)
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Turn feedback into tests
 
-![Automated ML Testing with Giskard](<.gitbook/assets/Screenshot 2022-07-18 at 10.29.32.png>)
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Write some custom tests</p></figcaption></figure>
+
+### 4. Check your test result
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>Test dashboard</p></figcaption></figure>
+
+### 5. Deploy your tests in your CI/CD pipeline
+
+<figure><img src=".gitbook/assets/CICDproduct (1).webp" alt=""><figcaption><p>Have your tests executed in your CI/CD pipeline</p></figcaption></figure>
 
 ## Guides: Jump right in
 
