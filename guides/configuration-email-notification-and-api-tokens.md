@@ -1,61 +1,8 @@
 ---
-description: >-
-  How to configure your Giskard application: Python version, Python version,
-  email notifications and API tokens
+description: 'How to configure your Giskard application: Email notifications and API tokens'
 ---
 
-# Configuration
-
-## Install additional Python libraries
-
-If you need specific Python libraries that are not pre-installed in Giskard and that are available in PyPI, git, locally etc., you can install them manually in Giskard.&#x20;
-
-To do so, please follow these steps:
-
-1. Change the file `giskard/giskard-ml-worker/ml-worker.dockerfile`. To do that, here are the steps:
-
-* From your Giskard repo, type:
-
-```bash
-vim giskard-ml-worker/ml-worker.dockerfile
-```
-
-* Below the line `Add your python dependencies here`, write the following line:  (press `i` to edit in the _vim_ text editor).
-
-```bash
-RUN poetry add <YOUR LIBRARY> #With Poetry you can add libraries hosted locally, Github, PyPI, etc. See: https://python-poetry.org/docs/cli/#add etc
-```
-
-* Save and quit the text editor (`:wq` in the _vim_ editor)
-
-2\. Then rebuild your docker images using the following command lines
-
-```bash
-docker compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker compose stop ml-worker && docker compose up -d ml-worker
-```
-
-## Install a new Python version
-
-Giskard application is working on Python 3.7, if you use another Python version (3.9 or 3.10 for instance), please follow these steps:
-
-1. Change Python version in `giskard/giskard-ml-worker/ml-worker.dockerfile`. To do that, here are the steps:
-
-* From your Giskard repo, type:
-
-```bash
-vim giskard-ml-worker/ml-worker.dockerfile
-```
-
-* Replace `Python3.7` in the first line by your Python version (press `i` to edit in the _vim_ text editor). You can find the Python images according to your Python version in this [dockerhub link](https://hub.docker.com/\_/python)
-* Save and quit the text editor (`:wq` in the _vim_ editor)
-
-2\. Then rebuild your docker images using the following command lines
-
-```bash
-docker compose -f docker-compose.dev.yml -f docker-compose.yml build ml-worker
-docker compose stop ml-worker && docker compose up -d ml-worker
-```
+# Configuration: email notification and API tokens
 
 ## Email notifications
 

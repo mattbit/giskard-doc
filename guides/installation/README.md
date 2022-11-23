@@ -63,7 +63,7 @@ docker compose down && docker compose pull && docker compose up -d --force-recre
 {% hint style="danger" %}
 * The browser may keep using an old version of Giskard UI due to caching. If there are issues after running an upgrade try to **hard refresh** Giskard page by pressing\
   `Ctrl + Shift + R` or  `Command + Shift + R`&#x20;
-* If you installed in Giskard additional **Python libraries** or a **new Python version**, you will need to reinstall them. Please refer to [configuration](../configuration.md).
+* If you installed in Giskard additional **Python libraries** or a **new Python version**, you will need to reinstall them. Please refer to [configuration](../configuration-email-notification-and-api-tokens.md).
 {% endhint %}
 
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)

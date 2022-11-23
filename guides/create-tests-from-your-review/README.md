@@ -57,6 +57,63 @@ Once you have run the test you designed, Giskard provides the results (PASS or F
 
 ![](<../../.gitbook/assets/Screenshot 2022-07-18 at 10.23.02.png>)
 
+## 4. Open a test API to execute your tests externally
+
+**1. Find the ids of the objects you created in Giskard**
+
+To find the ids of the **tests and test suites** you created in Giskard, use:
+
+```clike
+project.list_tests_in_suite(suite_id)
+project.list_test_suites()
+```
+
+To find the ids of the model and datasets you uploaded in Giskard, use the \*upload\_\* methods:
+
+```clike
+ds_id = upload_df(...)
+model_id = upload_model(...)
+model_id, ds_id = upload_model_and_df(...)
+```
+
+{% hint style="info" %}
+You can also find all your ids in the Giskard UI
+{% endhint %}
+
+**2. Execute your tests & test suites externally**
+
+To execute your model externally and have your test results as a JSON file, use the following APIs:
+
+```clike
+project.execute_test(
+    test_id,
+    actual_ds_id=None,
+    reference_ds_id=None,
+    model_id=None)
+
+project.execute_test_suite(
+    test_suite_id,
+    actual_ds_id=None,
+    reference_ds_id=None,
+    model_id=None)
+```
+
+{% hint style="info" %}
+When the optional arguments (**model / actual\_ds / reference\_ds**) are provided, they replace the existing ones in the test suites. If they're not provided, the old values (model / actual\_ds / reference\_ds) remain unchanged in the test suite settings.
+{% endhint %}
+
+**Example:**
+
+A typical workflow can be:
+
+```clike
+new_model_id = upload_model(...)
+
+test_result = project.execute_test_suite(
+    test_suite_id=123,
+    model_id=new_model_id)
+```
+
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
 
 If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;
