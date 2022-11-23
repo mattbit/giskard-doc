@@ -95,6 +95,6 @@ By default, ML Worker execution logs are located in `$HOME/giskard-home/run/ml-w
 
 You can access the logs by executing the following command in your notebook:
 
-```python
-!tail -f /root/giskard-home/run/ml-worker.log
+```shell
+!tail -f $HOME/giskard-home/run/ml-worker.log
 ```
