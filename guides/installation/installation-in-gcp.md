@@ -53,7 +53,7 @@ Creating the firewall rules can also be done **through UI** in the `VPC Network`
 ```bash
 git clone https://github.com/Giskard-AI/giskard.git
 cd giskard
-sudo docker compose up -d --force-recreate
+sudo docker compose up -d --force-recreate --no-build
 ```
 
 ### 3. Connect to your instance and start uploading ML model
