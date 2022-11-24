@@ -12,6 +12,10 @@ To upload the model you want to inspect, you need:
 * A pandas dataframe composed of the examples you want to inspect. For example, it could be your test dataset or a dataset composed of some wrong predictions of your model
 * The Giskard's platform. To install it, check [installation](../installation/ "mention")
 
+{% hint style="warning" %}
+If Giskard is installed **locally**, you cannot upload a model from **Google Colab.**
+{% endhint %}
+
 ## Steps to upload your data & model
 
 ### 1. Install the Giskard library
@@ -45,7 +49,7 @@ If ML Worker manages to connect to the Giskard instance, you should see the foll
 For more information, see this [page](../installation/ml-worker.md).
 {% endhint %}
 
-### 3. Create a new Giskard project or load an existing project
+### 3. Create a new project or load an existing project
 
 To create a new project or load an existing one, run the code below in your Python environment:
 
