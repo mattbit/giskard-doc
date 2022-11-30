@@ -1,5 +1,5 @@
 ---
-description: Open source & collaborative Quality testing for Machine Learning models
+description: Open-Source & Collaborative Quality Testing for AI models
 ---
 
 # Get started
