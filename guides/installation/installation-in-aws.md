@@ -1,5 +1,5 @@
 ---
-description: Easily install Giskard in AWS using our AMI, in 3 steps
+description: Easily install Giskard in AWS in 4 steps
 ---
 
 # Installation in AWS
@@ -11,24 +11,42 @@ description: Easily install Giskard in AWS using our AMI, in 3 steps
 
 ### 2. Configure your EC2 instance
 
-* **Image selection**: In the search bar for AMI, type "Giskard" and select either `giskard-latest` or the specific Giskard version you want
+* **Application and OS image**: Select the default Ubuntu server 22.04 LTS 64-bit (x86)
 * **Instance type**: We recommend you to choose at least a `t2.large` instance type (2vCPU, 8GB memory)
 * **Key pair**: Choose your usual key pair. If you don't have one, go to the [Amazon document](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html) to create the right one
-* **Network settings**: Make sure to tick HTTP to be able to access the application. And SSH too if you need to access the machine.
+* **Network settings**: You need to **open the ports `19000` and `40051` (TCP connection)** to access the Giskard frontend (port `19000`) and upload your model (port `40051`). To do so, click on `Edit` and add the following security groups:
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 * **Storage**: Choose a minimum of 30 Gigs of SSD (this will mainly depend on the size of your datasets)
 
-### 3. Launch instance and open Giskard
+### 3. Launch the instance and install Giskard
 
-* **Launch instance**: Click on Launch instance to create the instance
-* **Get your IP address**: Click in the ID of the instance you just created and copy its IP address
-* Go to **`http://<your IP address>`** in your browser
+* Click on Launch instance to create the instance
+* Connect in SSH to your instance. You can for example use the `EC2 Instance connect` to open a terminal directly in your AWS platform
+* Installation of the Giskard requirements (`git` and `docker`)
+
+```bash
+ sudo apt install git
+ curl -fsSL https://get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
+```
+
+* Installation of Giskard
+
+```bash
+git clone https://github.com/Giskard-AI/giskard.git
+cd giskard
+sudo docker compose up -d --force-recreate --no-build
+```
+
+### 4. Connect to your instance and start uploading an ML model
+
+* **Get your IP address**: Click on the ID of the instance you just created and copy its **Public IPv4** address (or **Public IPv4 DNS**)
+* Go to **`http://<your IP address>:19000`** in your web browser
 * The user id is `admin` and the password is `admin`
 
 That's it, you are now ready to use Giskard in AWS! Now you can start [uploading a model](../upload-your-model/)!
-
-{% hint style="warning" %}
-If you have an error message when you log in, you may need to wait one or two minutes for the Giskard backend to start!
-{% endhint %}
 
 {% hint style="info" %}
 You can stop the instance and restart it when you need to save your AWS compute costs. However, note that the **IP address will not necessarily be the same**. So make sure you copy it again when it's launched

@@ -32,7 +32,7 @@ And of course, Giskard works with any model, any environment and integrates seem
 
 ### 4. Check your test result
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>Test dashboard</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Test dashboard</p></figcaption></figure>
 
 ### 5. Deploy your tests in your CI/CD pipeline
 
