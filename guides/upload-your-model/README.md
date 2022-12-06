@@ -66,7 +66,7 @@ If you want to use an **existing project**, use `project=client.get_project("EXI
 * `upload_model` to **upload a new version of the model** you want to inspect/test
 * `upload_dataset` to **upload a new dataset** that you want to apply to your existing model
 
-For more details about the arguments of these functions, see our [Github repo](https://github.com/Giskard-AI/giskard-client/blob/main/giskard/project.py).
+For more details about the arguments of these functions, see our [Github repo](https://github.com/Giskard-AI/giskard/blob/c8dfce152fd678c2cf09c66625e28fbea8eea5b6/python-client/giskard/client/project.py).
 {% endhint %}
 
 ### 4. Upload a model and a dataset
