@@ -1,8 +1,8 @@
 ---
-description: Open-Source & Collaborative Quality Testing for AI models
+description: Open-Source & Collaborative Quality Assurance for AI models
 ---
 
-# Get started
+# Get started with Giskard
 
 **Giskard creates interfaces for humans to inspect & test AI models. It is open-source and self-hosted.**
 
