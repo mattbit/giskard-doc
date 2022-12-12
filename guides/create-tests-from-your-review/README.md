@@ -33,7 +33,7 @@ To create tests, you need first to create a test suite, here are the 3 steps:
 
 ## 2. Customize your tests inside your test suite
 
-Giskard proposes 5 families of tests that you can customize (see [documentation](https://github.com/Giskard-AI/giskard/tree/main/giskard-ml-worker/test)):
+Giskard proposes 5 families of tests that you can customize (see [documentation](https://github.com/Giskard-AI/giskard/tree/main/python-client/giskard/ml\_worker/testing)):
 
 * **Metamorphic testing:** Test if your model outputs behave as expected before and after input perturbation
 * **Heuristics testing**: Test if your model output respect some business rules
@@ -44,7 +44,7 @@ Giskard proposes 5 families of tests that you can customize (see [documentation]
 ![](<../../.gitbook/assets/Screenshot 2022-07-18 at 10.29.32.png>)
 
 {% hint style="info" %}
-To have detailed **documentation** on these tests, go to [https://github.com/Giskard-AI/giskard-client/tree/main/giskard/ml\_worker/testing](https://github.com/Giskard-AI/giskard-client/tree/main/giskard/ml\_worker/testing)
+To have detailed **documentation** on these tests, go to [https://github.com/Giskard-AI/giskard/tree/main/python-client/giskard/ml\_worker/testing](https://github.com/Giskard-AI/giskard/tree/main/python-client/giskard/ml\_worker/testing)
 {% endhint %}
 
 {% hint style="info" %}
