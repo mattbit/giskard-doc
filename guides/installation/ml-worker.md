@@ -57,6 +57,15 @@ When started from Jupyter notebook, ML Worker should be run as a daemon. Otherwi
 `!giskard worker start -d`
 {% endhint %}
 
+{% hint style="info" %}
+In case `giskard` command isn't available in the PATH, it's possible to start worker from running python process (jupyter kernel for example) by executing the following command:
+
+```
+import sys, os
+print(os.popen(f'{sys.executable} -m giskard.cli worker start -d -h XXX').read())
+```
+{% endhint %}
+
 ## Running multiple ML Workers
 
 It's possible to start multiple ML Workers, for example, to connect them to different Giskard instances. It's not possible, however, to have multiple workers that use the same python interpreter to be connected to the same Giskard instance.
