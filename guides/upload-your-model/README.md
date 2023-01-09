@@ -39,7 +39,7 @@ and re-installing again
 If ML Worker manages to connect to the Giskard instance, you should see the following message in the worker logs: **"Connected to Giskard server."**&#x20;
 
 {% hint style="info" %}
-* If Giskard is installed **locally**, please only do: `giskard worker start.` That will establish a connection to the Giskard instance installed on localhost:40041. &#x20;
+* If Giskard is installed **locally**, please only do: `giskard worker start.` That will establish a connection to the Giskard instance installed on localhost:40051. &#x20;
 * If Giskard **is not installed locally**, please specify the IP address (and a port in case a custom port is used). For example, `giskard worker start -h 192.158.1.38`
 
 For more information, see this [page](../installation/ml-worker.md).
