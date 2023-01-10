@@ -23,7 +23,7 @@ To install Giskard, you need a **Linux** or **macOS** machine with:
 *   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).`For an easy installation of Docker you can execute:&#x20;
 
     ```bash
-     curl -fsSL https://get.docker.com -o get-docker.sh
+     sudo curl -fsSL https://get.docker.com -o get-docker.sh
      sudo sh get-docker.sh
     ```
 {% endhint %}
@@ -38,7 +38,7 @@ docker compose pull && docker compose up -d --force-recreate --no-build
 
 {% hint style="warning" %}
 * If you have an error because of the rate limit (**`toomanyrequests: Rate exceeded`**), please re-execute the docker-compose command line once again.
-* If you have an older version of docker, you'll need to use**`docker-compose`** instead of `docker compose`
+* If`compose`is not found, you may have an older version of docker, so you'll need to use**`docker-compose`** instead of `docker compose.`Alternatively, you can also upgrade your docker version
 {% endhint %}
 
 Once the docker-compose starts all the modules, you'll be able to open Giskard at [http://localhost:19000/](http://localhost:19000/)
