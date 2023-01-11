@@ -10,7 +10,7 @@ To compute local explanations of textual features, Giskard uses the LIME algorit
 
 By default, n\_samples is equal to 500. To change it, you need to change the project settings. To do that, click on **Edit** in the top right corner of your screen (see the image below)
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Email notifications
 

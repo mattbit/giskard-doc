@@ -20,7 +20,7 @@ And of course, Giskard works with any model, any environment and integrates seem
 
 ### 1. Validate your ML model by collecting feedback
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption><p>Collect feedback of your ML models</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Collect feedback of your ML models</p></figcaption></figure>
 
 ### 2. Discuss and analyse feedback
 
@@ -28,7 +28,7 @@ And of course, Giskard works with any model, any environment and integrates seem
 
 ### 3. Turn feedback into tests
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Write some custom tests</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Write some custom tests</p></figcaption></figure>
 
 ### 4. Check your test result
 
