@@ -7,7 +7,7 @@ description: >-
 # Installation & upgrade
 
 {% hint style="success" %}
-**Cloud installation:** To install Giskard in the **Cloud**, please go to the [**AWS**](installation-in-aws.md), [**GCP**](installation-in-gcp.md), and [**Azure**](installation-in-azure.md) installation page&#x20;
+**Cloud installation:** To install Giskard in the **Cloud**, please go to the [**AWS**](installation-in-aws.md), [**GCP**](installation-in-gcp.md), and [**Azure**](installation-in-azure.md) installation pages&#x20;
 {% endhint %}
 
 {% hint style="info" %}
