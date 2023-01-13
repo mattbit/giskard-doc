@@ -18,7 +18,17 @@ Installing Giskard in Azure enables you to inspect & test models that you create
 5.  Go to `Settings`, `Networking`, and click on `Add inbound port rule` with the following properties:
 
     <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-6. Connect to your VM in SSH by using the path of the private key file you downloaded. To do so, go to the tab `Overview`, select `Connect` and `SSH` then follow the different steps to get the right command to execute in your terminal
+6. Connect to your VM in SSH by using the path of the **private key file** you downloaded. To do so, go to the tab `Overview`, select `Connect` and `SSH` then follow the different steps to get the right command to execute in your terminal.&#x20;
+
+{% hint style="info" %}
+For example, the terminal command line to SSH connect to your install from your computer can be:
+
+```
+sudo ssh -i /Users/bob/Downloads/Giskard2_key.cer azureuser@52.142.236.215
+```
+{% endhint %}
+
+
 
 ### 2. Install Giskard in the VM
 

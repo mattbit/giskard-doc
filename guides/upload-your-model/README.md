@@ -32,13 +32,17 @@ and re-installing again
 
 ### 2. Start ML Worker
 
-[ML worker](../installation/ml-worker.md) is the component in Giskard that connect your Python environment to the Giskard server that you just installed. For more technical information, have a look at this [page](../installation/ml-worker.md). To start MLworker, execute the following command line:
+[ML worker](../installation/ml-worker.md) is the component in Giskard that connect **your Python environment** to the Giskard server that you just installed. For more technical information, have a look at this [page](../installation/ml-worker.md). To start MLworker, execute the following command line in the terminal of the machine where your model was created:
 
 `giskard worker start -h [GISKARD IP ADDRESS]`
 
 If ML Worker manages to connect to the Giskard instance, you should see the following message in the worker logs: **"Connected to Giskard server."**&#x20;
 
 {% hint style="info" %}
+* If you work from your notebook, you will need to start Giskard as a daemon with:
+
+`giskard worker start -d -h [GISKARD IP ADDRESS]`
+
 * If Giskard is installed **locally**, please only do: `giskard worker start.` That will establish a connection to the Giskard instance installed on localhost:40051. &#x20;
 * If Giskard **is not installed locally**, please specify the IP address (and a port in case a custom port is used). For example, `giskard worker start -h 192.158.1.38`
 
