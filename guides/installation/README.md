@@ -15,7 +15,7 @@ description: >-
 
 To install Giskard, you need a **Linux** or **macOS** machine with:
 
-* `By default Giskard uses 2 TCP ports: 19000 and 40051, make sure they're open on the machine where Giskard is installed`
+* Giskard uses 2 TCP ports: `19000` and `40051`. If you don't use Giskard locally (installation in the cloud for instance), **make sure that these two ports are open** on the machine where Giskard is installed
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
 *   `docker (`[`download`](https://docs.docker.com/engine/install/debian/)`).`For an easy installation of Docker you can execute:&#x20;
 
