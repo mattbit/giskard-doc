@@ -13,7 +13,7 @@ description: >-
 {% hint style="info" %}
 ## Requirements
 
-To install Giskard, you need a **Linux** or **macOS** machine with:
+To install Giskard, you need a **Linux** or **macOS** machine or **WSL2 in Windows** with:
 
 * Giskard uses 2 TCP ports: `19000` and `40051`. If you don't use Giskard locally (installation in the cloud for instance), **make sure that these two ports are open** on the machine where Giskard is installed
 * `git (`[`download`](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)`)`
