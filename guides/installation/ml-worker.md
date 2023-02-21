@@ -96,7 +96,7 @@ To stop all ML Workers running on a given machine:
 
 Admin users can find information about an ML Worker that is currently active in Giskard on a Giskard settings page:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Logs
 

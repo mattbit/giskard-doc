@@ -50,8 +50,8 @@ Follow our handy guides to get started on the basics as quickly as possible:
 [upload-your-model](guides/upload-your-model/)
 {% endcontent-ref %}
 
-{% content-ref url="guides/review-your-model/" %}
-[review-your-model](guides/review-your-model/)
+{% content-ref url="guides/review-your-model.md" %}
+[review-your-model.md](guides/review-your-model.md)
 {% endcontent-ref %}
 
 {% content-ref url="guides/create-tests-from-your-review/" %}

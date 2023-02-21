@@ -14,14 +14,14 @@ To review your model, you can either
 
 ## Choose a model and a dataset to inspect
 
-After [uploading your model](../upload-your-model/), you can inspect it by:
+After [uploading your model](upload-your-model/), you can inspect it by:
 
 * Clicking on the Models tab
 * Selecting the model version that you want to inspect by clicking on the Inspect button
 * Selecting the dataset that you want to use for the inspection
 * Selecting the actual target variable from your dataset. This is the true value of your target variable. If there is no actual target variable in your dataset, just select the blank cell
 
-![Choose the dataset for the inspection session](<../../.gitbook/assets/choose a model.jpg>)
+![Choose the dataset for the inspection session](<../.gitbook/assets/choose a model.jpg>)
 
 ## Play with the model
 
@@ -31,7 +31,7 @@ You can play with the model by changing examples, feature values, or generating 
 
 Use the Next and Previous buttons of the Dataset Explorer to explore your dataset from one example to another.
 
-![The Data Explorer](<../../.gitbook/assets/Data explorer.png>)
+![The Data Explorer](<../.gitbook/assets/Data explorer.png>)
 
 You can also select the random button of the Data Explorer to explore randomly your dataset.
 
@@ -39,7 +39,7 @@ You can also select the random button of the Data Explorer to explore randomly y
 
 You can also artificially change the feature values for a given example.&#x20;
 
-![Changing the credit history feature](../../.gitbook/assets/perturbation.png)
+![Changing the credit history feature](../.gitbook/assets/perturbation.png)
 
 By checking the change of the result and its explanation, you'll gain some insights into the local behavior of your model.
 
@@ -49,7 +49,7 @@ By checking the change of the result and its explanation, you'll gain some insig
 
 Every time you change examples or feature values, a local explanation is generated and provides the contribution of each feature to the final result.&#x20;
 
-![Local Shap values for a credit scoring model](../../.gitbook/assets/explanation.jpg)
+![Local Shap values for a credit scoring model](../.gitbook/assets/explanation.jpg)
 
 The explanation is given as a bar plot giving the absolute value of the [Shapley ](https://en.wikipedia.org/wiki/Shapley\_value)value for each feature: the longer the bar of a given feature, the greater its contribution to the final result of the model.
 
@@ -60,7 +60,7 @@ You can also generate a text explanation to have a look at the contribution of e
 * select a text feature you want to explain
 * select the classification label for which you want to compute the word contribution
 
-![Explanation for a textual feature](../../.gitbook/assets/lime.jpg)
+![Explanation for a textual feature](../.gitbook/assets/lime.jpg)
 
 It then returns the [LIME ](https://christophm.github.io/interpretable-ml-book/lime.html)values of each word in your textual feature: green highlighting means a positive contribution to the selected classification label, while red highlighting means a negative contribution.
 
@@ -83,19 +83,19 @@ To send your feedback, you have two possibilities.
 
 To provide feedback by feature, click on the green feedback button on the right of the feature field
 
-![Provide feedback by feature](<../../.gitbook/assets/feedbcack-gif (1).gif>)
+![Provide feedback by feature](<../.gitbook/assets/feedbcack-gif (1).gif>)
 
 ### 2. Provide general feedback
 
 If your feedback is related to the whole example, you may send general feedback by clicking on the Feedback bottom at the bottom right&#x20;
 
-![Provide general feedback](../../.gitbook/assets/general-feedback-gif.gif)
+![Provide general feedback](../.gitbook/assets/general-feedback-gif.gif)
 
 ## Analyze the collected feedback
 
 To analyze feedback, select the Feedback tab. It lists all the feedback that were collected in your project.
 
-![List of collected feedback](<../../.gitbook/assets/feedback manager.jpg>)
+![List of collected feedback](<../.gitbook/assets/feedback manager.jpg>)
 
 ### Filter and group the feedback
 
@@ -115,7 +115,7 @@ Grouping feedback by feature enables you to check which feature collected the mo
 
 You can click on particular feedback to re-inspect the example and discuss it with the feedback provider.
 
-![](<../../.gitbook/assets/Screenshot 2022-03-08 at 10.00.08 (1).png>)
+![](<../.gitbook/assets/Screenshot 2022-03-08 at 10.00.08 (1).png>)
 
 {% hint style="info" %}
 Discussion can be important to clarify the feedback context and find the best action to correct the model.

@@ -12,7 +12,7 @@ In order to create a slice, open an inspection and click on "Slice to apply" sel
 
 In the modal that appears one can implement the filtering logic in python:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 The `filter_row` function will be applied to each row of the dataset and if it returns a `True` value the current row will be part of a resulting slice, else it'll be filtered out.
 
