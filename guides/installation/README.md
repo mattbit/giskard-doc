@@ -65,4 +65,25 @@ docker compose down && docker compose pull && docker compose up -d --force-recre
 
 ## Troubleshooting[​](https://docs.airbyte.com/deploying-airbyte/on-aws-ec2#troubleshooting)
 
-If you encounter any issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;
+<details>
+
+<summary>How can I connect to my local Giskard instance from Colab/other remote solutions ?</summary>
+
+We provide a [ngrok](https://ngrok.com/) configuration file [here](https://github.com/Giskard-AI/giskard/blob/main/scripts/ngrok.yml) which will automatically expose the required ports. You can run it using `ngrok start --config ngrok.yml --all --authtoken YOUR_AUTH_TOKEN`
+
+1. Download the configuration file on the device hosting the Giskard instance
+2. In that folder, run the command `ngrok start --config ngrok.yml --all --authtoken YOUR_AUTH_TOKEN`
+3.  You should see an output similar to this: \
+
+
+    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sample "ngrok start" output</p></figcaption></figure>
+4. Start your ML Worker with:\
+   `giskard worker start -h X.tcp.xx.ngrok.io -p XXXXX` replacing with the URL and port from your console.
+5. Create your GiskardClient with your address like this:\
+   `GiskardClient('https://xxxx-xx-xx-xx-xx.xx.ngrok.io')`
+
+</details>
+
+#### My issue isn't listed here
+
+If you encounter any other issues, join our [**Discord**](https://discord.gg/fkv7CAr3FE) on our #support channel. Our community will help!&#x20;
