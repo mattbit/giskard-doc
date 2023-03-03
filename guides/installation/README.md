@@ -67,7 +67,7 @@ docker compose down && docker compose pull && docker compose up -d --force-recre
 
 <details>
 
-<summary>How can I connect to my local Giskard instance from Colab/other remote solutions ?</summary>
+<summary>How can I connect to my local Giskard instance from Google Colab/other remote notebook or code environment?</summary>
 
 We provide a [ngrok](https://ngrok.com/) configuration file [here](https://github.com/Giskard-AI/giskard/blob/main/scripts/ngrok.yml) which will automatically expose the required ports. You can run it using `ngrok start --config ngrok.yml --all --authtoken YOUR_AUTH_TOKEN`
 
