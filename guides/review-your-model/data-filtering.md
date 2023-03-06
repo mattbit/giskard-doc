@@ -8,7 +8,7 @@ Starting from Giskard v.1.4.0 it's possible to define a filtering function while
 
 In order to create a slice, open an inspection and click on "Slice to apply" selector:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Filter creation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Filter creation</p></figcaption></figure>
 
 In the modal that appears one can implement the filtering logic in python:
 

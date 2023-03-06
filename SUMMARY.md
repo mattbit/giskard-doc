@@ -9,6 +9,7 @@
   * [Installation in AWS](guides/installation/installation-in-aws.md)
   * [Installation in GCP](guides/installation/installation-in-gcp.md)
   * [Installation in Azure](guides/installation/installation-in-azure.md)
+  * [Installation with Google Colab](guides/installation/installation-with-google-colab.md)
 * [Upload your ML model & data](guides/upload-your-model/README.md)
   * [Wrap your prediction function](guides/upload-your-model/wrap-your-prediction-function.md)
 * [Collect feedback of your ML model](guides/review-your-model.md)

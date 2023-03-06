@@ -16,7 +16,7 @@ description: Easily install Giskard in AWS in 4 steps
 * **Key pair**: Choose your usual key pair. If you don't have one, go to the [Amazon document](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-key-pairs.html) to create the right one
 * **Network settings**: You need to **open the ports `19000` and `40051` (TCP connection)** to access the Giskard frontend (port `19000`) and upload your model (port `40051`). To do so, click on `Edit` and add the following security groups:
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 * **Storage**: Choose a minimum of 30 Gigs of SSD (this will mainly depend on the size of your datasets)
 

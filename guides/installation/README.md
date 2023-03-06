@@ -76,7 +76,7 @@ We provide a [ngrok](https://ngrok.com/) configuration file [here](https://githu
 3.  You should see an output similar to this: \
 
 
-    <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Sample "ngrok start" output</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Sample "ngrok start" output</p></figcaption></figure>
 4. Start your ML Worker with:\
    `giskard worker start -h X.tcp.xx.ngrok.io -p XXXXX` replacing with the URL and port from your console.
 5. Create your GiskardClient with your address like this:\
